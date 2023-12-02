@@ -26,6 +26,16 @@ public class LinkedList {
         head = newNode;
     }
 
+    public Node search(int value) {
+        Node tmp = head;
+        while (tmp != null) {
+            if (value == tmp.getData()) {
+                return tmp;
+            }
+            tmp = tmp.getNext();
+        }
+        return null;
+    }
     public void deleteFirst(){
         head = head.getNext();
         if (isEmpty()){

@@ -14,6 +14,12 @@ public class Hash {
         this.N = N;
     }
 
+    public Node search(int value){
+        int address;
+        address = hashFunction(value);
+        return table[address].search(value);
+    }
+
     public void insert(int value){
         int address;
         address = hashFunction(value);
