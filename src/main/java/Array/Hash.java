@@ -29,7 +29,6 @@ public class Hash {
         }
         return table[address];
     }
-
     public void insert(int value){
         int address;
         address = hashFunction(value);
