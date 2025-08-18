@@ -48,6 +48,14 @@ public class Tree {
         }
     }
 
+    public int countEvenNodes(){
+        return 0;
+    }
+
+    int depthOfNode(int X){
+        return 0;
+    }
+
     public boolean isIdentical(TreeNode T1, TreeNode T2){
         return false;
     }
@@ -57,14 +65,6 @@ public class Tree {
     }
 
     double simulateSearch(int N){
-        return 0;
-    }
-
-    public int countEvenNodes(){
-        return 0;
-    }
-
-    int depthOfNode(int X){
         return 0;
     }
 

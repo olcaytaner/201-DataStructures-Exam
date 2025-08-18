@@ -41,29 +41,34 @@ public class Queue {
         return null;
     }
 
-    void removeOddIndexed(){
-    }
-
-    Element dequeue(int k){
-        return null;
-    }
-
     public Queue(Queue[] list){
     }
 
     public void copyPaste(Queue src, int index){
     }
 
-    public void rotateQueue(int k){
+    void cutPaste(Queue dest, int p, int q){
     }
 
-    void insertAfterLargest (int data){
+    Element dequeue(int k){
+        return null;
+    }
+
+    Element dequeue2nd(){
+        return null;
     }
 
     Queue divideQueue(){
         return null;
     }
 
-    void cutPaste(Queue dest, int p, int q){
+    void insertAfterLargest (int data){
     }
+
+    void removeOddIndexed(){
+    }
+
+    public void rotateQueue(int k){
+    }
+
 }

@@ -53,7 +53,11 @@ public class LinkedList {
         return result.toString();
     }
 
-    public boolean evenOddSorted(){
+    void addAfterEachNode(Node newNode){
+
+    }
+
+    boolean containsOnlyDuplicates(){
         return false;
     }
 
@@ -61,14 +65,7 @@ public class LinkedList {
         return false;
     }
 
-    LinkedList intersec(LinkedList list1, LinkedList list2){
-        return null;
-    }
-
-    public void printFibonacciWay(int N){
-    }
-
-    boolean containsOnlyDuplicates(){
+    public boolean evenOddSorted(){
         return false;
     }
 
@@ -76,11 +73,23 @@ public class LinkedList {
         return null;
     }
 
-    public LinkedList zibonacci(int A, int B){
+    LinkedList intersec(LinkedList list1, LinkedList list2){
         return null;
     }
 
     public boolean isIncreasingOfSizeK(int k){
         return false;
     }
+
+    public void printFibonacciWay(int N){
+    }
+
+    void removeKth(int K){
+
+    }
+
+    public LinkedList zibonacci(int A, int B){
+        return null;
+    }
+
 }

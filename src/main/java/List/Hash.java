@@ -30,6 +30,25 @@ public class Hash {
         return value % N;
     }
 
+    void deleteAll(int X){
+    }
+
+    public static int[] difference(int[] list1, int[] list2){
+        return null;
+    }
+
+    int[] intersection(int[] list1, int[] list2){
+        return null;
+    }
+
+    boolean isValid(){
+        return false;
+    }
+
+    public int minTableSize(int[] numbers){
+        return 0;
+    }
+
     int numberOfClusters(){
         return 0;
     }
@@ -38,7 +57,7 @@ public class Hash {
         return false;
     }
 
-    public static int[] union(int[] list1, int[] list2){
+    Hash simplify(){
         return null;
     }
 
@@ -46,23 +65,7 @@ public class Hash {
         return false;
     }
 
-    int[] intersection(int[] list1, int[] list2){
-        return null;
-    }
-
-    public static int[] difference(int[] list1, int[] list2){
-        return null;
-    }
-
-    Hash simplify(){
-        return null;
-    }
-
     boolean sumOfTwoK(int[] array, int k){
-        return false;
-    }
-
-    boolean isValid(){
         return false;
     }
 
@@ -70,7 +73,8 @@ public class Hash {
         return null;
     }
 
-    public int minTableSize(int[] numbers){
-        return 0;
+    public static int[] union(int[] list1, int[] list2){
+        return null;
     }
+
 }

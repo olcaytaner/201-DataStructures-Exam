@@ -38,30 +38,31 @@ public class Stack {
         return null;
     }
 
-    public void push(int k, int data){
+    public boolean checkString(int[] s){
+        return false;
     }
 
     public void compress(){
     }
 
-    public void insertAfterLargest(int newValue){
-    }
-
-    void removeEvenIndexed(){
-    }
-
     public void copyPaste(Stack src, int index){
     }
 
-    Element pop(int k){
-        return null;
+    public void insertAfterLargest(int newValue){
     }
 
     static boolean isBalanced(int[] a){
         return false;
     }
 
-    public boolean checkString(int[] s){
-        return false;
+    Element pop(int k){
+        return null;
     }
+
+    public void push(int k, int data){
+    }
+
+    void removeEvenIndexed(){
+    }
+
 }

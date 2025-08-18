@@ -41,23 +41,31 @@ public class Hash {
         table[address] = new Element(value);
     }
 
-    int numberOfExtras(int[] array){
-        return 0;
-    }
-
-    static int[] sortByHashing(int[] array){
-        return null;
-    }
-
-    public static boolean hasEqualPairSums(int[] array){
-        return false;
-    }
-
     boolean anyDuplicate(int[] array){
         return false;
     }
 
+    void deleteAll(int X){
+
+    }
+
+    public static boolean equalPairSums(int[] array){
+        return false;
+    }
+
+    int hashFunctionItSelf(){
+        return 0;
+    }
+
+    int numberOfExtras(int[] array){
+        return 0;
+    }
+
     Hash simplify(){
+        return null;
+    }
+
+    static int[] sortByHashing(int[] array){
         return null;
     }
 

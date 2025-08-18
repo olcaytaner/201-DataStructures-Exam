@@ -26,14 +26,10 @@ public class Stack {
         return topNode;
     }
 
-    public void push(int k, int data){
+    public Stack(Stack s, int p, int q){
     }
 
-    public void removeOddIndexed(){
-    }
-
-    LinkedList popBottomK(int k){
-        return new LinkedList();
+    void addToStack(Stack s, int p, int q){
     }
 
     public boolean checkString(int[] s){
@@ -44,9 +40,17 @@ public class Stack {
         return null;
     }
 
-    void addToStack(Stack s, int p, int q){
+    LinkedList popBottomK(int k){
+        return new LinkedList();
     }
 
-    public Stack(Stack s, int p, int q){
+    public void push(int k, int data){
     }
+
+    void removeBottomK(int K){
+    }
+
+    public void removeOddIndexed(){
+    }
+
 }

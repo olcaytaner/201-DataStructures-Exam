@@ -34,17 +34,11 @@ public class Queue {
         return result;
     }
 
-    Node dequeue(int k){
-        return null;
-    }
-
-    public void removeAll(Queue[] list){
-    }
-
     Queue(Queue[] list){
     }
 
-    public void reverseQueue(){
+    Node dequeue(int k){
+        return null;
     }
 
     Queue divideQueue(){
@@ -55,8 +49,18 @@ public class Queue {
         return null;
     }
 
+    public int minimum(){
+        return 0;
+    }
+
     public int maximum(){
         return 0;
+    }
+
+    public void removeAll(Queue[] list){
+    }
+
+    public void reverseQueue(){
     }
 
     public void thisMustChange(int[] indexOfNonbribers){

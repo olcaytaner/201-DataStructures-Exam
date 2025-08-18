@@ -21,17 +21,6 @@ public class DoublyLinkedList extends LinkedList{
         }
     }
 
-    public DoublyLinkedList sortElements(){
-        return null;
-    }
-
-    public void reverse(){
-    }
-
-    public boolean isPalindrom(){
-        return false;
-    }
-
     DoublyLinkedList[] divideList(int k){
         return null;
     }
@@ -40,6 +29,17 @@ public class DoublyLinkedList extends LinkedList{
         return null;
     }
 
+    public boolean isPalindrom(){
+        return false;
+    }
+
     void removeKthBeforeLast(int K){
+    }
+
+    public void reverse(){
+    }
+
+    public DoublyLinkedList sortElements(){
+        return null;
     }
 }
