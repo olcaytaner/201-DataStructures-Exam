@@ -52,4 +52,35 @@ public class LinkedList {
         }
         return result.toString();
     }
+
+    public boolean evenOddSorted(){
+        return false;
+    }
+
+    public boolean containsOnlyTriplicates(){
+        return false;
+    }
+
+    LinkedList intersec(LinkedList list1, LinkedList list2){
+        return null;
+    }
+
+    public void printFibonacciWay(int N){
+    }
+
+    boolean containsOnlyDuplicates(){
+        return false;
+    }
+
+    LinkedList getIndexed(LinkedList list){
+        return null;
+    }
+
+    public LinkedList zibonacci(int A, int B){
+        return null;
+    }
+
+    public boolean isIncreasingOfSizeK(int k){
+        return false;
+    }
 }

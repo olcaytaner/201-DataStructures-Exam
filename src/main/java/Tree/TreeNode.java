@@ -45,4 +45,34 @@ public class TreeNode {
         }
     }
 
+    int averages(){
+        return 0;
+    }
+
+    int sumOfPath(String path){
+        return 0;
+    }
+
+    void accumulateLeafNodes(Queue queue){
+    }
+
+    boolean hasPathRecursive(int[] path){
+        return false;
+    }
+
+    int sumOfTree(int X){
+        return 0;
+    }
+
+    int sumOfNodesBetween(int p, int q){
+        return 0;
+    }
+
+    int[] collectNodes(){
+        return null;
+    }
+
+    public int[] lessThanX(int x){
+        return null;
+    }
 }

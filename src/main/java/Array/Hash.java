@@ -41,4 +41,24 @@ public class Hash {
         table[address] = new Element(value);
     }
 
+    int numberOfExtras(int[] array){
+        return 0;
+    }
+
+    static int[] sortByHashing(int[] array){
+        return null;
+    }
+
+    public static boolean hasEqualPairSums(int[] array){
+        return false;
+    }
+
+    boolean anyDuplicate(int[] array){
+        return false;
+    }
+
+    Hash simplify(){
+        return null;
+    }
+
 }

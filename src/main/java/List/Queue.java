@@ -33,4 +33,32 @@ public class Queue {
         }
         return result;
     }
+
+    Node dequeue(int k){
+        return null;
+    }
+
+    public void removeAll(Queue[] list){
+    }
+
+    Queue(Queue[] list){
+    }
+
+    public void reverseQueue(){
+    }
+
+    Queue divideQueue(){
+        return null;
+    }
+
+    Queue[] divideQueue(int k){
+        return null;
+    }
+
+    public int maximum(){
+        return 0;
+    }
+
+    public void thisMustChange(int[] indexOfNonbribers){
+    }
 }

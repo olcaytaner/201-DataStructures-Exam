@@ -48,4 +48,27 @@ public class Tree {
         }
     }
 
+    public boolean isIdentical(TreeNode T1, TreeNode T2){
+        return false;
+    }
+
+    public int product(){
+        return 0;
+    }
+
+    double simulateSearch(int N){
+        return 0;
+    }
+
+    public int countEvenNodes(){
+        return 0;
+    }
+
+    int depthOfNode(int X){
+        return 0;
+    }
+
+    public void topTwo(){
+    }
+
 }

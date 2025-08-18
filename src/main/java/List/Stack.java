@@ -25,4 +25,28 @@ public class Stack {
         top = top.next;
         return topNode;
     }
+
+    public void push(int k, int data){
+    }
+
+    public void removeOddIndexed(){
+    }
+
+    LinkedList popBottomK(int k){
+        return new LinkedList();
+    }
+
+    public boolean checkString(int[] s){
+        return false;
+    }
+
+    Node pop(int k){
+        return null;
+    }
+
+    void addToStack(Stack s, int p, int q){
+    }
+
+    public Stack(Stack s, int p, int q){
+    }
 }
