@@ -22,13 +22,6 @@ public class DoublyLinkedList extends LinkedList{
     }
 
     /**
-     * Write a function which doubles each node in a doubly linked list, that is, after each node inserts that node
-     * again.
-     */
-    void doubleList() {
-    }
-
-    /**
      * Write the method which constructs an array of linked lists by dividing the original linked list into $k$ equal
      * parts. The first, second, ..., $k$’th element of the original linked list will be the first element of the first,
      * second, . . ., $k$’th output linked list, etc. The elements of the output linked list should be created (not
@@ -36,6 +29,13 @@ public class DoublyLinkedList extends LinkedList{
      */
     DoublyLinkedList[] divideList(int k){
         return null;
+    }
+
+    /**
+     * Write a function which doubles each node in a doubly linked list, that is, after each node inserts that node
+     * again.
+     */
+    void doubleList() {
     }
 
     /**
