@@ -146,6 +146,13 @@ public class TreeNode {
     }
 
     /**
+     * Write a method that computes the products of all keys in a binary search tree.
+     */
+    int productOfTree(){
+        return 0;
+    }
+
+    /**
      * Write the recursive method in TreeNode class which returns the sum of the keys between p and q in the tree. Your
      * algorithm should run in ${\cal O}(\log N + K)$, where K is the number of nodes which have value larger than p and
      * less than q in the tree.

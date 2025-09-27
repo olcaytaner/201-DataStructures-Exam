@@ -107,13 +107,6 @@ public class Tree {
     }
 
     /**
-     * Write a method that computes the products of all keys in a binary search tree.
-     */
-    int productOfTree(){
-        return 0;
-    }
-
-    /**
      * Write a non-recursive method in Tree class, which first finds the minimum (A) and maximum (B) elements in the
      * tree. The method will then randomly search a number between [A, B] $N$ times and returns the average number of
      * nodes visited in this search. You are not allowed to use any tree methods.
