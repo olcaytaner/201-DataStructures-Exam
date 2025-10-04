@@ -27,7 +27,7 @@ public class DoublyLinkedList extends LinkedList{
      * second, . . ., $k$’th output linked list, etc. The elements of the output linked list should be created (not
      * copied from the original linked list). You are not allowed to use any linked list methods.
      */
-    DoublyLinkedList[] divideList(int k){
+    public DoublyLinkedList[] divideList(int k){
         return null;
     }
 
@@ -35,14 +35,14 @@ public class DoublyLinkedList extends LinkedList{
      * Write a function which doubles each node in a doubly linked list, that is, after each node inserts that node
      * again.
      */
-    void doubleList() {
+    public void doubleList() {
     }
 
     /**
      * Write a method for doubly linked lists, which returns a new doubly linked list with even indexed nodes (2, 4,
      * ..) from the original list. Your linked list should contain new nodes, not the same nodes in the original linked list. The first node has index 1. You are not allowed to use any  linked list methods, just attributes, constructors, getters and setters.
      */
-    DoublyLinkedList getEvenOnes(){
+    public DoublyLinkedList getEvenOnes(){
         return null;
     }
 
@@ -68,7 +68,7 @@ public class DoublyLinkedList extends LinkedList{
      * then handle special cases K = 1, and K = N, then do the rest. You are not allowed to use any doubly linked list
      * methods. You are allowed to use attributes, constructors, getters and setters.
      */
-    void removeKthBeforeLast(int K){
+    public void removeKthBeforeLast(int K){
     }
 
     /**
@@ -95,6 +95,6 @@ public class DoublyLinkedList extends LinkedList{
      * setters. Write the method in the DoublyLinkedList class.
      */
     public DoublyLinkedList sortElements(){
-        return null;
+        return this;
     }
 }

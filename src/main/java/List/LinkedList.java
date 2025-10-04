@@ -26,6 +26,15 @@ public class LinkedList {
         head = newNode;
     }
 
+    public void insertLast(Node newNode) {
+        if (head == null) {
+            head = newNode;
+        } else {
+            tail.setNext(newNode);
+        }
+        tail = newNode;
+    }
+
     public Node search(int value) {
         Node tmp = head;
         while (tmp != null) {
@@ -64,14 +73,14 @@ public class LinkedList {
      * the linked lists). Your algorithm should run in ${\cal O}(km)$ time. Allocate and use an external array of size
      * $k$ to store current pointers in each of $k$ lists.
      */
-    LinkedList(LinkedList[] list, int k, int m){
+    public LinkedList(LinkedList[] list, int k, int m){
 
     }
 
     /**
      * Write the method which add newnode after each node in the singly linked list.
      */
-    void addAfterEachNode(Node newNode){
+    public void addAfterEachNode(Node newNode){
 
     }
 
@@ -99,7 +108,7 @@ public class LinkedList {
      * (number) occurs only twice. Important warning, the duplicate elements may not be adjacent. You are not allowed
      * to use any singly linked list methods, just attributes, constructors, getters and setters.
      */
-    boolean containsOnlyDuplicates(){
+    public boolean containsOnlyDuplicates(){
         return false;
     }
 
@@ -117,27 +126,27 @@ public class LinkedList {
      * Write a linear time method to delete the nodes indexed between p and q (including p'th and q'th items) from a
      * singly linked list.
      */
-    void deleteBetween(int p, int q){
+    public void deleteBetween(int p, int q){
     }
 
     /**
      * Write the method which removes the nodes with even values in the original list. Your method should run in
      * ${\cal O}(N)$ time.
      */
-    void deleteEven(){
+    public void deleteEven(){
     }
 
     /**
      * Write a function to delete $k$'th node from a singly linked list.
      */
-    void deleteKth(int K){
+    public void deleteKth(int K){
 
     }
 
     /**
      * Write a function that will delete all {\bf prime} nodes that is their data field is prime such as 2, 3, 5, 7, etc.
      */
-    void deletePrimes(){
+    public void deletePrimes(){
     }
 
     /**
@@ -146,26 +155,26 @@ public class LinkedList {
      * in list2. Do not modify linked lists list1 and list2. Your method should run in ${\cal O}(N)$ time. Nodes in the
      * resulting list should be new. You can not use any linked list methods except getters and setters.
      */
-    LinkedList difference(LinkedList list1, LinkedList list2){
-        return null;
+    public static LinkedList difference(LinkedList list1, LinkedList list2){
+        return list1;
     }
 
     /**
      * Write the algorithm Sieve of Eratosthenes to extract prime numbers using singly linked list. The algorithm works
      * as follows:
      * <ul>
-     *     <li>The user enters a number N.</li>
      *     <li>Put all numbers starting from 2 to N in a linked list.</li>
      *     <li>While the linked list contains numbers
      *     <ul>
      *         <li>Remove the first element $p$ from the linked list. Print it (It is prime).</li>
      *         <li>Remove all elements from the linked list which are divisible by $p$. Do not print them.</li>
      *     </ul>
+     *     <li>Return the linked list</li>
      *     </li>
      * </ul>
      */
-    void eratosthenes(){
-
+    public static LinkedList eratosthenes(int N){
+        return null;
     }
 
     /**
@@ -185,8 +194,8 @@ public class LinkedList {
      * Your algorithm should run in ${\cal O}(N)$ time. Your linked list should contain new nodes, not the same nodes
      * in the original linked list.
      */
-    LinkedList getIndexed(LinkedList list){
-        return null;
+    public LinkedList getIndexed(LinkedList list){
+        return this;
     }
 
     /**
@@ -208,8 +217,8 @@ public class LinkedList {
      * You are not allowed to use any linked list methods. You are only allowed to use attributes, constructors,
      * getters and setters.
      */
-    LinkedList intersec(LinkedList list1, LinkedList list2){
-        return null;
+    public static LinkedList intersec(LinkedList list1, LinkedList list2){
+        return list1;
     }
 
     /**
@@ -229,7 +238,7 @@ public class LinkedList {
      * </ul>
      * Let say the list is 1 2 3 4 5 6, and k = 2, then 2, 4, 6, 3, 1 will be deleted, 5 remains.
      */
-    Node lastOneWins(int k){
+    public Node lastOneWins(int k){
         return null;
     }
 
@@ -241,7 +250,7 @@ public class LinkedList {
      * </ul>
      * Let say N = 200, the function will return 2, 2, 2, 5, 5. You are not allowed to use any array in the function.
      */
-    LinkedList primeDivisors(int N){
+    public static LinkedList primeDivisors(int N){
         return null;
     }
 
@@ -252,10 +261,11 @@ public class LinkedList {
      * <ul>
      *     <li>Creates a temporary linked list of Fibonacci numbers in reverse until N. So, for the given example, the
      *     list will contains the numbers 89, 55, 34, 21, 13, 8, 5, 3, 2, 1.</li>
-     *     <li>Using Fibonacci numbers list, prints the representation with spaces in between.</li>
+     *     <li>Using Fibonacci numbers list, returns the representation as a linked list.</li>
      * </ul>
      */
-    public void printFibonacciWay(int N){
+    public static LinkedList fibonacciWay(int N){
+        return null;
     }
 
     /**
@@ -263,16 +273,15 @@ public class LinkedList {
      * use any methods from the LinkedList class. You can assume both the original list and list2 do not contain
      * duplicate elements. Do not modify list2. Your method should run in ${\cal O}(N^2)$ time.
      */
-    void remove(LinkedList list2){
-
+    public void remove(LinkedList list2){
     }
 
     /**
      * Write a function that computes the GCD (Greatest Common Divisor) of every window of \textit{k} consecutive nodes
      * in the list and returns a new linked list containing these GCD values.
      */
-    LinkedList windowedPairwiseGCD(int k){
-        return null;
+    public LinkedList windowedPairwiseGCD(int k){
+        return this;
     }
 
     /**
@@ -280,7 +289,7 @@ public class LinkedList {
      * first three Zibonacci numbers are \\$Z_0$ = 0, $Z_1$ = 1, $Z_2$ = 1\\ and the general formula is
      * \\$Z_n = Z_{n-1} + Z_{n-3}$. Assume that A $\geq$ 2 and $B > A$.
      */
-    public LinkedList zibonacci(int A, int B){
+    public static LinkedList zibonacci(int A, int B){
         return null;
     }
 
