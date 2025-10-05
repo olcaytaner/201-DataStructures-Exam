@@ -12,6 +12,12 @@ public class DoublyLinkedList extends LinkedList{
         tail = newNode;
     }
 
+    public void insertArray(int[] data){
+        for (int datum : data){
+            insertLast(new DoublyNode(datum));
+        }
+    }
+
     public void deleteLast(){
         tail = ((DoublyNode)tail).getPrevious();
         if (tail != null){

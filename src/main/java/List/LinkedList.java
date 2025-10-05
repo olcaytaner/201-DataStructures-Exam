@@ -1,5 +1,7 @@
 package List;
 
+import com.sun.istack.internal.NotNull;
+
 public class LinkedList {
 
     protected Node head;
@@ -16,6 +18,12 @@ public class LinkedList {
 
     public Node getHead(){
         return head;
+    }
+
+    public void insertArray(int[] data){
+        for (int datum : data){
+            insertLast(new Node(datum));
+        }
     }
 
     public void insertFirst(Node newNode) {
