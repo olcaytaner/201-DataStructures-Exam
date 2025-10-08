@@ -1,5 +1,4 @@
 import List.DoublyLinkedList;
-import List.DoublyNode;
 import List.LinkedList;
 import List.Node;
 import org.junit.Test;
@@ -154,7 +153,7 @@ public class TestLinkedList {
         list = LinkedList.primeDivisors(2);
         assertEquals("2", list.toString().trim());
         list = LinkedList.primeDivisors(1890);
-        assertEquals("2 3 5 7 9", list.toString().trim());
+        assertEquals("2 3 3 3 5 7", list.toString().trim());
         list = LinkedList.primeDivisors(315);
         assertEquals("3 3 5 7", list.toString().trim());
     }

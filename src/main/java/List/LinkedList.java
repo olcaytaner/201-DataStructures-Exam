@@ -1,7 +1,5 @@
 package List;
 
-import com.sun.istack.internal.NotNull;
-
 public class LinkedList {
 
     protected Node head;
