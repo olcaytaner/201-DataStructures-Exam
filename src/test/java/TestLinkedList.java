@@ -436,11 +436,11 @@ public class TestLinkedList {
         list = new LinkedList();
         list.insertArray(new int[]{8, 3, 2, 6});
         list.addAfterEachNode(new Node(3));
-        assertEquals("8 3 3 3 2 3 6 3", doublyList.toString().trim());
+        assertEquals("8 3 3 3 2 3 6 3", list.toString().trim());
         list = new LinkedList();
         list.insertArray(new int[]{8, 3, 2, 6, 10, 12});
         list.addAfterEachNode(new Node(2));
-        assertEquals("8 2 3 2 2 2 6 2 10 2 12 2", doublyList.toString().trim());
+        assertEquals("8 2 3 2 2 2 6 2 10 2 12 2", list.toString().trim());
     }
 
     @Test
