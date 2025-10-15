@@ -109,7 +109,7 @@ public class TestLinkedList {
     }
 
     @Test
-    public void testGetEvenNodes(){
+    public void testGetEvenOnes(){
         doublyList = new DoublyLinkedList();
         doublyList.insertArray(new int[]{1, 2, 4, 5});
         DoublyLinkedList result = doublyList.getEvenOnes();
