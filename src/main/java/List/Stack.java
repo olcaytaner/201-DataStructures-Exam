@@ -1,5 +1,7 @@
 package List;
 
+import Array.Element;
+
 public class Stack {
     private Node top;
 
@@ -26,6 +28,25 @@ public class Stack {
         return topNode;
     }
 
+    public void insertArray(int[] data){
+        for (int datum : data){
+            push(new Node(datum));
+        }
+    }
+
+    public String toString(){
+        if (isEmpty()){
+            return "";
+        }
+        String s = "" + top.getData();
+        Node tmp = top.getNext();
+        while (tmp != null){
+            s = tmp.getData() + " " + s;
+            tmp = tmp.getNext();
+        }
+        return s;
+    }
+
     /**
      * Write a new stack constructor which constructs a new stack by copying elements from stack $s$ indexed between $p$
      * and $q$ (both inclusive).
@@ -47,7 +68,7 @@ public class Stack {
      * 1. You are not allowed to use any stack methods and any external stacks. You are allowed to use attributes,
      * constructors, getters and setters.
      */
-    void addToStack(Stack s, int p, int q){
+    public void addToStack(Stack s, int p, int q){
     }
 
     /**
@@ -65,7 +86,7 @@ public class Stack {
      * that is, the first element at the top has index 1. You are not allowed to use any stack methods and any external
      * stacks, just attributes, constructors, getters and setters.
      */
-    Node pop(int k){
+    public Node pop(int k){
         return null;
     }
 
@@ -74,7 +95,7 @@ public class Stack {
      * allowed to use any stack methods and any external stacks. You are allowed to use attributes, constructors,
      * getters and setters.
      */
-    LinkedList popBottomK(int k){
+    public LinkedList popBottomK(int k){
         return new LinkedList();
     }
 
@@ -90,7 +111,7 @@ public class Stack {
      * Write a function which removes only the $K$ bottom elements of the stack. You are only allowed to use pop, push,
      * isEmpty functions. You can use an external stack.
      */
-    void removeBottomK(int K){
+    public void removeBottomK(int K){
     }
 
     /**

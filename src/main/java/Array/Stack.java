@@ -1,5 +1,7 @@
 package Array;
 
+import List.Node;
+
 public class Stack {
     private Element[] array;
     private int top;
@@ -11,31 +13,48 @@ public class Stack {
         top = -1;
     }
 
-    boolean isFull(){
+    public boolean isFull(){
         return top == N - 1;
     }
 
-    boolean isEmpty(){
+    public boolean isEmpty(){
         return top == -1;
     }
 
-    Element peek(){
+    public Element peek(){
         return array[top];
     }
 
-    void push(Element element){
+    public void push(Element element){
         if (!isFull()){
             top++;
             array[top] = element;
         }
     }
 
-    Element pop(){
+    public Element pop(){
         if (!isEmpty()){
             top--;
             return array[top + 1];
         }
         return null;
+    }
+
+    public void insertArray(int[] data){
+        for (int datum : data){
+            push(new Element(datum));
+        }
+    }
+
+    public String toString(){
+        String s = "";
+        for (int i = 0; i < top; i++){
+            s += array[i].getData() + " ";
+        }
+        if (top != -1){
+            s += array[top].getData();
+        }
+        return s;
     }
 
     /**
@@ -81,7 +100,7 @@ public class Stack {
      * 2, 3, 13, 12, 4, 14 is balanced, whereas 5, 15, 4, 3, 14, 13 not. You are not allowed to use any stack attributes
      * such as N, top, array etc.
      */
-    static boolean isBalanced(int[] a){
+    public static boolean isBalanced(int[] a){
         return false;
     }
 
@@ -90,7 +109,7 @@ public class Stack {
      * that is, the first element at the top has index 1. You are not allowed to use any stack methods and any external
      * stacks, just attributes, constructors, getters and setters.
      */
-    Element pop(int k){
+    public Element pop(int k){
         return null;
     }
 
@@ -107,7 +126,7 @@ public class Stack {
      * the bottom has index 1. You are only allowed to use pop, push, isEmpty functions (Hint: Use external stack). You
      * are not allowed to use any stack attributes such as N, top, array etc.
      */
-    void removeEvenIndexed(){
+    public void removeEvenIndexed(){
     }
 
 }
