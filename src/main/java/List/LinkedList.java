@@ -65,7 +65,7 @@ public class LinkedList {
             result.append(tmp).append(" ");
             tmp = tmp.getNext();
         }
-        return result.toString();
+        return result.toString().trim();
     }
 
     /**

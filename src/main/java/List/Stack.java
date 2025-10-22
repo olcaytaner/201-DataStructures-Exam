@@ -44,7 +44,7 @@ public class Stack {
             s = tmp.getData() + " " + s;
             tmp = tmp.getNext();
         }
-        return s;
+        return s.trim();
     }
 
     /**

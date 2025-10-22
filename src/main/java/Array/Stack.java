@@ -54,7 +54,7 @@ public class Stack {
         if (top != -1){
             s += array[top].getData();
         }
-        return s;
+        return s.trim();
     }
 
     /**

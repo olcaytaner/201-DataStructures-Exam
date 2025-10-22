@@ -31,12 +31,15 @@ public class TestArrayStack {
         assertEquals("1 2", stack.toString());
         stack = new Stack(100);
         stack.insertArray(new int[]{1, 2, 3, 4, 5});
+        stack.compress();
         assertEquals("1 2 3 4 5", stack.toString());
         stack = new Stack(100);
         stack.insertArray(new int[]{1, 1, 2, 2, 2, 5, 5, 5, 5, 6});
+        stack.compress();
         assertEquals("1 2 5 6", stack.toString());
         stack = new Stack(100);
         stack.insertArray(new int[]{1, 4, 4, 8, 8, 8, 16, 16, 16, 16, 32});
+        stack.compress();
         assertEquals("1 4 8 16 32", stack.toString());
     }
 

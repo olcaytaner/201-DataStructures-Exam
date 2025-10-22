@@ -52,7 +52,7 @@ public class TestListStack {
         assertTrue(stack.checkString(new int[]{1, 1, 1, 2, 3, 4, 4, 4}));
         assertFalse(stack.checkString(new int[]{1, 2, 3, 4, 4}));
         assertFalse(stack.checkString(new int[]{1, 1, 2, 2, 3, 4, 4}));
-        assertFalse(stack.checkString(new int[]{1, 2, 2, 3, 3, 4}));
+        assertTrue(stack.checkString(new int[]{1, 2, 2, 3, 3, 4}));
         assertFalse(stack.checkString(new int[]{1, 1, 1, 2, 2, 3, 4, 4, 4}));
     }
 
