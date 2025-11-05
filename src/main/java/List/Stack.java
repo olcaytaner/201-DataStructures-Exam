@@ -122,4 +122,20 @@ public class Stack {
     public void removeOddIndexed(){
     }
 
+    /**
+     * Write a method where k is a positive integer representing the number
+     * of positions to rotate the stack by. After the rotation,
+     * the first element of the stack should move to the
+     * back k times and the order of the other elements
+     * should shift accordingly.
+     * <ol>
+     *     <li>You are not allowed to use the pop, push, or top methods.</li>
+     *     <li>You may assume stack has at least 2 items.</li>
+     *     <li>The solution should rotate the array in O(N) time, where N is the number of elements in the queue.</li>
+     *     <li>Assume that k < N</li>
+     *     <li>You can not use extra data structures including arrays.</li>
+     * </ol>
+     */
+    public void rotateStack(int k){
+    }
 }

@@ -126,4 +126,23 @@ public class TestListStack {
         assertEquals("", stack.toString());
     }
 
+    @Test
+    public void testRotateStack(){
+        stack.insertArray(new int[]{1, 2, 3, 4, 5});
+        stack.rotateStack(2);
+        assertEquals("4 5 1 2 3", stack.toString());
+        stack = new Stack();
+        stack.insertArray(new int[]{1, 2, 3, 4, 5, 6});
+        stack.rotateStack(5);
+        assertEquals("2 3 4 5 6 1", stack.toString());
+        stack = new Stack();
+        stack.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        stack.rotateStack(1);
+        assertEquals("7 1 2 3 4 5 6", stack.toString());
+        stack = new Stack();
+        stack.insertArray(new int[]{4, 5, 6, 7, 8});
+        stack.rotateStack(3);
+        assertEquals("6 7 8 4 5", stack.toString());
+    }
+
 }

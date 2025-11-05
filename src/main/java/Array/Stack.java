@@ -129,4 +129,21 @@ public class Stack {
     public void removeEvenIndexed(){
     }
 
+    /**
+     * Write a method which removes all items between maximum and
+     * minimum element, keeping these minimum and
+     * maximum elements. Notice that minimum does not always need to
+     * show up before maximum, it can be
+     * other way around as well.
+     * <ol>
+     *     <li>You may assume there are at least 3 items in the stack.</li>
+     *     <li>You may assume all elements are distinct.</li>
+     *     <li>You are not allowed to use any stack methods, just attributes, constructors, getters and setters.</li>
+     *     <li>You can not use extra data structures including arrays.</li>
+     *     <li>Time complexity of the algorithm does not matter.</li>
+     * </ol>
+     */
+    public void removeBetweenMinMax(){
+    }
+
 }

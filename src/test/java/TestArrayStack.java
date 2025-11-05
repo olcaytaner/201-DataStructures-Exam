@@ -134,4 +134,23 @@ public class TestArrayStack {
         assertEquals("1", stack.toString());
     }
 
+    @Test
+    public void testRemoveBetweenMinMax(){
+        stack.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
+        stack.removeBetweenMinMax();
+        assertEquals("1 10", stack.toString());
+        stack = new Stack(100);
+        stack.insertArray(new int[]{6, 8, 9, 3, 2, 1, 5, 7});
+        stack.removeBetweenMinMax();
+        assertEquals("6 8 9 1 5 7", stack.toString());
+        stack = new Stack(100);
+        stack.insertArray(new int[]{10, 9, 8, 7, 6, 5, 1, 4, 3, 2});
+        stack.removeBetweenMinMax();
+        assertEquals("10 1 4 3 2", stack.toString());
+        stack = new Stack(100);
+        stack.insertArray(new int[]{5, 3, 7, 1, 8, 2, 10});
+        stack.removeBetweenMinMax();
+        assertEquals("5 3 7 1 10", stack.toString());
+    }
+
 }

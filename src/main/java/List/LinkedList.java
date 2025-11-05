@@ -10,16 +10,16 @@ public class LinkedList {
         tail = null;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return head == null;
     }
 
-    public Node getHead(){
+    public Node getHead() {
         return head;
     }
 
-    public void insertArray(int[] data){
-        for (int datum : data){
+    public void insertArray(int[] data) {
+        for (int datum : data) {
             insertLast(new Node(datum));
         }
     }
@@ -51,14 +51,15 @@ public class LinkedList {
         }
         return null;
     }
-    public void deleteFirst(){
+
+    public void deleteFirst() {
         head = head.getNext();
-        if (isEmpty()){
+        if (isEmpty()) {
             tail = null;
         }
     }
-    
-    public String toString(){
+
+    public String toString() {
         StringBuilder result = new StringBuilder();
         Node tmp = head;
         while (tmp != null) {
@@ -79,14 +80,14 @@ public class LinkedList {
      * the linked lists). Your algorithm should run in ${\cal O}(km)$ time. Allocate and use an external array of size
      * $k$ to store current pointers in each of $k$ lists.
      */
-    public LinkedList(LinkedList[] list, int k, int m){
+    public LinkedList(LinkedList[] list, int k, int m) {
 
     }
 
     /**
      * Write the method which add newnode after each node in the singly linked list.
      */
-    public void addAfterEachNode(Node newNode){
+    public void addAfterEachNode(Node newNode) {
 
     }
 
@@ -105,7 +106,7 @@ public class LinkedList {
      *     <li>For the last number, insert the count.</li>
      * </ul>
      */
-    public LinkedList calculateCounts(){
+    public LinkedList calculateCounts() {
         return null;
     }
 
@@ -114,7 +115,7 @@ public class LinkedList {
      * (number) occurs only twice. Important warning, the duplicate elements may not be adjacent. You are not allowed
      * to use any singly linked list methods, just attributes, constructors, getters and setters.
      */
-    public boolean containsOnlyDuplicates(){
+    public boolean containsOnlyDuplicates() {
         return false;
     }
 
@@ -124,7 +125,7 @@ public class LinkedList {
      * should have a time complexity of ${\cal O}(N^2)$. You are not allowed to use any single linked list methods, just
      * attributes, constructors, getters and setters.
      */
-    public boolean containsOnlyTriplicates(){
+    public boolean containsOnlyTriplicates() {
         return false;
     }
 
@@ -132,27 +133,27 @@ public class LinkedList {
      * Write a linear time method to delete the nodes indexed between p and q (including p'th and q'th items) from a
      * singly linked list.
      */
-    public void deleteBetween(int p, int q){
+    public void deleteBetween(int p, int q) {
     }
 
     /**
      * Write the method which removes the nodes with even values in the original list. Your method should run in
      * ${\cal O}(N)$ time.
      */
-    public void deleteEven(){
+    public void deleteEven() {
     }
 
     /**
      * Write a function to delete $k$'th node from a singly linked list.
      */
-    public void deleteKth(int K){
+    public void deleteKth(int K) {
 
     }
 
     /**
      * Write a function that will delete all {\bf prime} nodes that is their data field is prime such as 2, 3, 5, 7, etc.
      */
-    public void deletePrimes(){
+    public void deletePrimes() {
     }
 
     /**
@@ -161,7 +162,7 @@ public class LinkedList {
      * in list2. Do not modify linked lists list1 and list2. Your method should run in ${\cal O}(N)$ time. Nodes in the
      * resulting list should be new. You can not use any linked list methods except getters and setters.
      */
-    public static LinkedList difference(LinkedList list1, LinkedList list2){
+    public static LinkedList difference(LinkedList list1, LinkedList list2) {
         return list1;
     }
 
@@ -179,7 +180,7 @@ public class LinkedList {
      *     </li>
      * </ul>
      */
-    public static LinkedList eratosthenes(int N){
+    public static LinkedList eratosthenes(int N) {
         return null;
     }
 
@@ -189,7 +190,7 @@ public class LinkedList {
      * any singly linked list methods. You are allowed to use attributes, constructors, getters and setters. Write the
      * method in the LinkedList class.
      */
-    public boolean evenOddSorted(){
+    public boolean evenOddSorted() {
         return false;
     }
 
@@ -200,7 +201,7 @@ public class LinkedList {
      * Your algorithm should run in ${\cal O}(N)$ time. Your linked list should contain new nodes, not the same nodes
      * in the original linked list.
      */
-    public LinkedList getIndexed(LinkedList list){
+    public LinkedList getIndexed(LinkedList list) {
         return this;
     }
 
@@ -223,7 +224,7 @@ public class LinkedList {
      * You are not allowed to use any linked list methods. You are only allowed to use attributes, constructors,
      * getters and setters.
      */
-    public static LinkedList intersec(LinkedList list1, LinkedList list2){
+    public static LinkedList intersec(LinkedList list1, LinkedList list2) {
         return list1;
     }
 
@@ -231,7 +232,7 @@ public class LinkedList {
      * Write a function that checks whether the original singly list contains at least one increasing sequence of length
      * $k > 1$ {\bf exactly}.
      */
-    public boolean isIncreasingOfSizeK(int k){
+    public boolean isIncreasingOfSizeK(int k) {
         return false;
     }
 
@@ -244,7 +245,7 @@ public class LinkedList {
      * </ul>
      * Let say the list is 1 2 3 4 5 6, and k = 2, then 2, 4, 6, 3, 1 will be deleted, 5 remains.
      */
-    public Node lastOneWins(int k){
+    public Node lastOneWins(int k) {
         return null;
     }
 
@@ -256,7 +257,7 @@ public class LinkedList {
      * </ul>
      * Let say N = 200, the function will return 2, 2, 2, 5, 5. You are not allowed to use any array in the function.
      */
-    public static LinkedList primeDivisors(int N){
+    public static LinkedList primeDivisors(int N) {
         return null;
     }
 
@@ -270,7 +271,7 @@ public class LinkedList {
      *     <li>Using Fibonacci numbers list, returns the representation as a linked list.</li>
      * </ul>
      */
-    public static LinkedList fibonacciWay(int N){
+    public static LinkedList fibonacciWay(int N) {
         return null;
     }
 
@@ -279,14 +280,14 @@ public class LinkedList {
      * use any methods from the LinkedList class. You can assume both the original list and list2 do not contain
      * duplicate elements. Do not modify list2. Your method should run in ${\cal O}(N^2)$ time.
      */
-    public void remove(LinkedList list2){
+    public void remove(LinkedList list2) {
     }
 
     /**
      * Write a function that computes the GCD (Greatest Common Divisor) of every window of \textit{k} consecutive nodes
      * in the list and returns a new linked list containing these GCD values.
      */
-    public LinkedList windowedPairwiseGCD(int k){
+    public LinkedList windowedPairwiseGCD(int k) {
         return this;
     }
 
@@ -295,8 +296,23 @@ public class LinkedList {
      * first three Zibonacci numbers are \\$Z_0$ = 0, $Z_1$ = 1, $Z_2$ = 1\\ and the general formula is
      * \\$Z_n = Z_{n-1} + Z_{n-3}$. Assume that A $\geq$ 2 and $B > A$.
      */
-    public static LinkedList zibonacci(int A, int B){
+    public static LinkedList zibonacci(int A, int B) {
         return null;
+    }
+
+    /**
+     * Write a method which compresses consecutive items with the same
+     * value into two consecutive values. If a value appears
+     * only once consecutively, you only keep the single
+     * value without compressing.
+     * <ol>
+     *     <li>You are not allowed to use any linked list methods, just attributes, constructors, getters and setters.</li>
+     *     <li>You can not use extra data structures including arrays.</li>
+     *     <li>Time complexity of the algorithm does not matter</li>
+     * </ol>
+     *
+     */
+    public void compressConsecutiveDouble() {
     }
 
 }

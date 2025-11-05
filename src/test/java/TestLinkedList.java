@@ -584,4 +584,40 @@ public class TestLinkedList {
         list1 = list.calculateCounts();
         assertEquals("0 1 0 2 0 3 0 4", list1.toString());
     }
+
+    @Test
+    public void testCompressConsecutiveDouble(){
+        list = new LinkedList();
+        list.insertArray(new int[]{2, 2, 2, 3, 3, 1});
+        list.compressConsecutiveDouble();
+        assertEquals("2 2 3 3 1", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{1, 2, 3, 4, 4, 2});
+        list.compressConsecutiveDouble();
+        assertEquals("1 2 3 4 4 2", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{1, 1, 1, 1, 4, 4, 4, 3, 3, 3, 3});
+        list.compressConsecutiveDouble();
+        assertEquals("1 1 4 4 3 3", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{10, 10, 10, 10, 3, 4, 4, 4, 4, 5});
+        list.compressConsecutiveDouble();
+        assertEquals("10 10 3 4 4 5", list.toString());
+    }
+
+    @Test
+    public void testZigZag(){
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{2, 3, 4, 2, 1});
+        assertTrue(doublyList.isZigZag());
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{2, 4, 3, 4, 5});
+        assertFalse(doublyList.isZigZag());
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{1, 3, 2});
+        assertTrue(doublyList.isZigZag());
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{1, 2, 3, 4, 5, 4, 3, 2, 1, 10});
+        assertFalse(doublyList.isZigZag());
+    }
 }

@@ -103,4 +103,20 @@ public class DoublyLinkedList extends LinkedList{
     public DoublyLinkedList sortElements(){
         return this;
     }
+
+    /**
+     * Write a method which returns True if doubly linked list is increasing
+     * first and then decreasing after some item. This zig
+     * zag pattern should appear exactly one time.
+     * <ol>
+     *     <li>You may assume all values are distinct.</li>
+     *     <li>You may assume list has at least 3 values.</li>
+     *     <li>You are not allowed to use any linked list methods, just attributes, constructors, getters and setters.</li>
+     *     <li>You can not use extra data structures including arrays.</li>
+     *     <li>Time complexity of the algorithm does not matter</li>
+     * </ol>
+     */
+    public boolean isZigZag(){
+        return false;
+    }
 }
