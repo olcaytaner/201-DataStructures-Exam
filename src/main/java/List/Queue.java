@@ -34,12 +34,31 @@ public class Queue {
         return result;
     }
 
+    public void insertArray(int[] data){
+        for (int datum : data){
+            enqueue(new Node(datum));
+        }
+    }
+
+    public String toString(){
+        if (isEmpty()){
+            return "";
+        }
+        String s = "" + first.getData();
+        Node tmp = first.getNext();
+        while (tmp != null){
+            s += " " + tmp.getData();
+            tmp = tmp.getNext();
+        }
+        return s.trim();
+    }
+
     /**
      * Write another constructor method which constructs a new list based queue by concatenating all elements in the list
      * of queues in order. The elements from queues should be recreated (not copied from the queues). You are not
      * allowed to use enqueue, dequeue, isEmpty functions.
      */
-    Queue(Queue[] list){
+    public Queue(Queue[] list){
     }
 
     /**
@@ -47,7 +66,7 @@ public class Queue {
      * dequeue, that is, the first element has index 1. You are not allowed to use any queue methods and any external
      * structures (arrays, queues, trees, etc). You are allowed to use attributes, constructors, getters and setters.
      */
-    Node dequeue(int k){
+    public Node dequeue(int k){
         return null;
     }
 
@@ -56,7 +75,7 @@ public class Queue {
      * and inserting into the newly created queue. The first node has index 1. You are not allowed to use any queue or
      * linked list methods, just attributes, constructors, getters and setters.
      */
-    Queue divideQueue(){
+    public Queue divideQueue(){
         return null;
     }
 
@@ -66,7 +85,7 @@ public class Queue {
      * $\ldots$, $k$'th output queues, etc. The elements of the output queues should be recreated (not copied from the
      * original queue). You are not allowed to use enqueue, dequeue, isEmpty functions.
      */
-    Queue[] divideQueue(int k){
+    public Queue[] divideQueue(int k){
         return null;
     }
 

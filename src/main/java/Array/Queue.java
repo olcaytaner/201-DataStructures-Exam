@@ -41,6 +41,20 @@ public class Queue {
         return null;
     }
 
+    public String toString(){
+        String s = "";
+        for (int i = first; i <last; i = (i + 1) % N){
+            s += array[i].getData() + " ";
+        }
+        return s.trim();
+    }
+
+    public void insertArray(int[] data){
+        for (int datum : data){
+            enqueue(new Element(datum));
+        }
+    }
+
     /**
      * Write another constructor method which constructs a new array based queue by adding the elements in the $list$
      * of queues one by one.  So, the first $k$ elements of the original queue will be constructed with the first
@@ -65,7 +79,7 @@ public class Queue {
      * to the dest queue. You are not allowed to use enqueue, dequeue, isEmpty functions. You can assume the destination
      * queue has enough space for insertion. Your method should run in ${\cal O}(N)$ time.
      */
-    void cutPaste(Queue dest, int p, int q){
+    public void cutPaste(Queue dest, int p, int q){
     }
 
     /**
@@ -73,7 +87,7 @@ public class Queue {
      * dequeue, that is, the first element has index 1. You are not allowed to use any queue methods and any external
      * structures (arrays, queues, trees, etc). You are allowed to use attributes, constructors, getters and setters.
      */
-    Element dequeue(int k){
+    public Element dequeue(int k){
         return null;
     }
 
@@ -81,7 +95,7 @@ public class Queue {
      * Write a method which removes and returns the second item from the queue. Your methods should run in ${\cal O}$(1)
      * time. Do not use any class or external methods except isEmpty().
      */
-    Element dequeue2nd(){
+    public Element dequeue2nd(){
         return null;
     }
 
@@ -90,7 +104,7 @@ public class Queue {
      * and inserting into the newly created queue. The first node has index 1. You are not allowed to use any queue or
      * linked list methods, just attributes, constructors, getters and setters.
      */
-    Queue divideQueue(){
+    public Queue divideQueue(){
         return null;
     }
 
@@ -98,7 +112,7 @@ public class Queue {
      * Write a function that inserts a new element after the largest element of the queue. Write the function for array
      * implementation. You are not allowed to use any queue methods, just attributes, constructors, getters and setters.
      */
-    void insertAfterLargest (int data){
+    public void insertAfterLargest (int data){
     }
 
     /**
@@ -106,7 +120,7 @@ public class Queue {
      * index 1. You are only allowed to use enqueue, dequeue, isEmpty functions. {\bf You should use external queue}.
      * You are not allowed to use any queue attributes such as first, last, array etc.
      */
-    void removeOddIndexed(){
+    public void removeOddIndexed(){
     }
 
     /**
