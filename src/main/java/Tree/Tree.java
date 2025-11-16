@@ -48,13 +48,20 @@ public class Tree {
         }
     }
 
+    public void insertArray(int[] data) {
+        for (int datum : data) {
+            iterativeInsert(new TreeNode(datum));
+        }
+    }
+
     /**
-     * Write a non-recursive method which prints the two smallest numbers in the binary search tree: You are not allowed
+     * Write a non-recursive method which returns a string that contains the two smallest numbers in the binary search tree: You are not allowed
      * to use any external data structures. (Hint: There are 3 cases: (i) The smallest number is on the left side and
      * it has right descendants, (ii) The smallest number is on the left side and it has no right descendants,
      * (iiii) The smallest number is the root.)
      */
-    public void bottomTwo(){
+    public String bottomTwo(){
+        return "";
     }
 
     /**
@@ -68,9 +75,9 @@ public class Tree {
     /**
      * Write a non-recursive method in Tree class that returns the depth of the node containing a given data $X$ in a
      * binary search tree. You are not allowed to use any tree methods, just attributes, constructors, getters and
-     * setters.
+     * setters. Depth of the root node is 1.
      */
-    int depthOfNode(int X){
+    public int depthOfNode(int X){
         return 0;
     }
 
@@ -85,7 +92,7 @@ public class Tree {
      * Write a nonrecursive method using Stack that finds the difference between the number of leftist nodes and
      * rightist nodes in a binary search tree. A node is leftist~(rightist) if it has only left~(right) child.
      */
-    int leftistOrRightist(){
+    public int leftistOrRightist(){
         return 0;
     }
 
@@ -94,7 +101,7 @@ public class Tree {
      * path is defined by the current parent as follows: If the parent is odd, go left; otherwise go right. The array
      * should contain only that many items not more not less.
      */
-    int[] pathList(){
+    public int[] pathList(){
         return null;
     }
 
@@ -111,7 +118,7 @@ public class Tree {
      * tree. The method will then randomly search a number between [A, B] $N$ times and returns the average number of
      * nodes visited in this search. You are not allowed to use any tree methods.
      */
-    double simulateSearch(int N){
+    public double simulateSearch(int N){
         return 0;
     }
 
@@ -122,7 +129,7 @@ public class Tree {
      * right. If the path is 001, you start from root, you go first left, then left, then right. You will use charAt
      * function in strings.
      */
-    int sumOfPath(String path){
+    public int sumOfPath(String path){
         return 0;
     }
 

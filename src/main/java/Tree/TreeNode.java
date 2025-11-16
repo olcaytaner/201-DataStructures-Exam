@@ -52,14 +52,14 @@ public class TreeNode {
      * nodes in queue. For queue, you are only allowed to use enqueue function. You should use array  implementation
      * for the queue in this question.
      */
-    void accumulateLeafNodes(Queue queue){
+    public void accumulateLeafNodes(Array.Queue queue){
     }
 
     /**
      * Write a recursive method which returns true if there is at least one node which is the average of its children
      * (left and right children must exist).
      */
-    boolean averageOfItsChildren(){
+    public boolean averageOfItsChildren(){
         return false;
     }
 
@@ -67,7 +67,7 @@ public class TreeNode {
      * Write a recursive method in TreeNode class which returns the number of nodes in the tree that satisfy the
      * following property: The node's key is the average of its children (left and right children).
      */
-    int averages(){
+    public int averages(){
         return 0;
     }
 
@@ -75,7 +75,7 @@ public class TreeNode {
      * Write the recursive method in TreeNode class, which collects all values in all nodes in the tree in a sorted
      * manner. You are not allowed to use any tree methods.
      */
-    int[] collectNodes(){
+    public int[] collectNodes(){
         return null;
     }
 
@@ -85,7 +85,7 @@ public class TreeNode {
      * matches a valid path from the current node down to a node in the BST, and {$false$} otherwise. Hint: you should
      * create an extra array to forward reduced path to the children.
      */
-    boolean hasPath(int[] path){
+    public boolean hasPath(int[] path){
         return false;
     }
 
@@ -94,7 +94,7 @@ public class TreeNode {
      * than $X$. Your method should run in ${\cal O}(\log N + K)$ time, where $N$ is total number of nodes and $K$ is
      * the number of nodes which have value larger than $X$ in the tree. Do not use any class or external methods.
      */
-    int higherThanX(int X){
+    public int higherThanX(int X){
         return 0;
     }
 
@@ -102,7 +102,7 @@ public class TreeNode {
      * Given a binary tree~(not necessarily search tree), implement a method in TreeNode class to check whether an input
      * binary tree is a mirror of itself (symmetric). You may not use any additional data structure or array.
      */
-    boolean isMirror(TreeNode left, TreeNode right){
+    public boolean isMirror(TreeNode left, TreeNode right){
         return false;
     }
 
@@ -114,7 +114,7 @@ public class TreeNode {
      *     <li>It has only left child.</li>
      * </ul>
      */
-    int leftist(){
+    public int leftist(){
         return 0;
     }
 
@@ -133,7 +133,7 @@ public class TreeNode {
      * Assume that if a key is duplicate, it occurs at most twice. Hint: The duplicate of a key is either the maximum
      * number on its left subtree or the minimum number on its right subtree.
      */
-    int numberOfDuplicates(){
+    public int numberOfDuplicates(){
         return 0;
     }
 
@@ -142,13 +142,13 @@ public class TreeNode {
      * where the path is defined by the current parent as follows: If the parent is odd, go left; otherwise go right.
      * Assume that the function is called with an empty linked list for the root node.
      */
-    void pathList(LinkedList l){
+    public void pathToLinkedList(LinkedList l){
     }
 
     /**
      * Write a method that computes the products of all keys in a binary search tree.
      */
-    int productOfTree(){
+    public int productOfTree(){
         return 0;
     }
 
@@ -157,7 +157,7 @@ public class TreeNode {
      * algorithm should run in ${\cal O}(\log N + K)$, where K is the number of nodes which have value larger than p and
      * less than q in the tree.
      */
-    int sumOfNodesBetween(int p, int q){
+    public int sumOfNodesBetween(int p, int q){
         return 0;
     }
 
@@ -165,7 +165,7 @@ public class TreeNode {
      * Write a recursive method in TreeNode class that computes the sum of all keys that are less than $X$ in a binary
      * search tree. You are not allowed to use any tree methods, just attributes, constructors, getters and setters.
      */
-    int sumOfTree(int X){
+    public int sumOfTree(int X){
         return 0;
     }
 
