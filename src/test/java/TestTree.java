@@ -99,16 +99,16 @@ public class TestTree {
         assertArrayEquals(new int[]{1}, tree.pathList());
         tree = new Tree();
         tree.insertArray(new int[]{5, 2, 6, 1, 8, 4, 3, 7});
-        assertEquals(new int[]{5, 2, 4}, tree.pathList());
+        assertArrayEquals(new int[]{5, 2, 4}, tree.pathList());
         tree = new Tree();
         tree.insertArray(new int[]{4, 2});
-        assertEquals(new int[]{4}, tree.pathList());
+        assertArrayEquals(new int[]{4}, tree.pathList());
         tree = new Tree();
         tree.insertArray(new int[]{4, 2, 6, 3, 7});
-        assertEquals(new int[]{4, 6, 7}, tree.pathList());
+        assertArrayEquals(new int[]{4, 6, 7}, tree.pathList());
         tree = new Tree();
         tree.insertArray(new int[]{4, 2, 6, 1, 3, 5, 7});
-        assertEquals(new int[]{4, 6, 7}, tree.pathList());
+        assertArrayEquals(new int[]{4, 6, 7}, tree.pathList());
     }
 
     @Test
@@ -249,7 +249,7 @@ public class TestTree {
         tree = new Tree();
         tree.insertArray(new int[]{4, 2, 6, 1, 3, 5, 7});
         assertTrue(tree.getRoot().hasPath(new int[]{4, 6, 5}));
-        assertFalse(tree.getRoot().hasPath(new int[]{4, 2, 1}));
+        assertTrue(tree.getRoot().hasPath(new int[]{4, 2, 1}));
     }
 
     @Test
