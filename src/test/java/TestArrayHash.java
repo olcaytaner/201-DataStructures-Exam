@@ -48,9 +48,9 @@ public class TestArrayHash {
         hash1.insertArray(new int[]{1, 2, 3, 4, 5, 4, 6, 7, 8, 2, 4, 6});
         assertEquals(1, hash1.hashFunctionItSelf());
         hash1 = new Hash(7);
-        hash1.insertArray(new int[]{1, 2, 2, 1, 2, 3, 1, 2, 1, 2});
+        hash1.insertArray(new int[]{1, 2, 2, 2, 1, 2});
         assertEquals(3, hash1.hashFunctionItSelf());
-        hash1 = new Hash(5);
+        hash1 = new Hash(25);
         hash1.insertArray(new int[]{1, 2, 3, 4, 5, 4, 6, 7, 8, 2, 4, 6});
         assertEquals(2, hash1.hashFunctionItSelf());
     }

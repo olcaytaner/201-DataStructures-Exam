@@ -103,16 +103,16 @@ public class TestListHash {
         assertArrayEquals(new int[]{1, 2, 4, 5, 6, 7}, Hash.symmetricDiff(new int[]{1, 2}, new int[]{4, 5, 6, 7}));
         assertArrayEquals(new int[]{2, 4}, Hash.symmetricDiff(new int[]{1, 2, 3, 4, 5}, new int[]{1, 3, 5}));
         assertArrayEquals(new int[]{1}, Hash.symmetricDiff(new int[]{1, 4, 5, 3, 2}, new int[]{4, 3, 2, 5}));
-        assertArrayEquals(new int[]{4, 5, 6}, Hash.difference(new int[]{1, 4, 5, 3, 2}, new int[]{1, 6, 2, 3}));
+        assertArrayEquals(new int[]{4, 5, 6}, Hash.symmetricDiff(new int[]{1, 4, 5, 3, 2}, new int[]{1, 6, 2, 3}));
     }
 
     @Test
     public void testUnion() {
-        assertArrayEquals(new int[]{1, 2, 3, 4}, Hash.symmetricDiff(new int[]{1, 2, 3, 4}, new int[]{4}));
-        assertArrayEquals(new int[]{1, 2, 4, 5, 6, 7}, Hash.symmetricDiff(new int[]{1, 2}, new int[]{4, 5, 6, 7}));
-        assertArrayEquals(new int[]{1, 2, 3, 4, 5}, Hash.symmetricDiff(new int[]{1, 2, 3, 4, 5}, new int[]{1, 3, 5}));
-        assertArrayEquals(new int[]{1, 4, 5, 3, 2}, Hash.symmetricDiff(new int[]{1, 4, 5, 3, 2}, new int[]{4, 3, 2, 5}));
-        assertArrayEquals(new int[]{1, 4, 5, 3, 2, 6}, Hash.difference(new int[]{1, 4, 5, 3, 2}, new int[]{1, 6, 2, 3}));
+        assertArrayEquals(new int[]{1, 2, 3, 4}, Hash.union(new int[]{1, 2, 3, 4}, new int[]{4}));
+        assertArrayEquals(new int[]{1, 2, 4, 5, 6, 7}, Hash.union(new int[]{1, 2}, new int[]{4, 5, 6, 7}));
+        assertArrayEquals(new int[]{1, 2, 3, 4, 5}, Hash.union(new int[]{1, 2, 3, 4, 5}, new int[]{1, 3, 5}));
+        assertArrayEquals(new int[]{1, 4, 5, 3, 2}, Hash.union(new int[]{1, 4, 5, 3, 2}, new int[]{4, 3, 2, 5}));
+        assertArrayEquals(new int[]{1, 4, 5, 3, 2, 6}, Hash.union(new int[]{1, 4, 5, 3, 2}, new int[]{1, 6, 2, 3}));
     }
 
     @Test
