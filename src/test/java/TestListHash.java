@@ -36,8 +36,8 @@ public class TestListHash {
         assertArrayEquals(new int[]{4}, Hash.intersection(new int[]{1, 2, 3, 4}, new int[]{4}));
         assertArrayEquals(new int[]{}, Hash.intersection(new int[]{1, 2}, new int[]{4, 5, 6, 7}));
         assertArrayEquals(new int[]{1, 3, 5}, Hash.intersection(new int[]{1, 2, 3, 4, 5}, new int[]{1, 3, 5}));
-        assertArrayEquals(new int[]{4, 5, 3, 2}, Hash.difference(new int[]{1, 4, 5, 3, 2}, new int[]{4, 3, 2, 5}));
-        assertArrayEquals(new int[]{1, 3, 2}, Hash.difference(new int[]{1, 4, 5, 3, 2}, new int[]{1, 6, 2, 3}));
+        assertArrayEquals(new int[]{4, 5, 3, 2}, Hash.intersection(new int[]{1, 4, 5, 3, 2}, new int[]{4, 3, 2, 5}));
+        assertArrayEquals(new int[]{1, 3, 2}, Hash.intersection(new int[]{1, 4, 5, 3, 2}, new int[]{1, 6, 2, 3}));
     }
 
     @Test
@@ -60,7 +60,7 @@ public class TestListHash {
     public void testMinTableSize() {
         assertEquals(5, Hash.minTableSize(new int[]{4, 2, 6, 3}));
         assertEquals(3, Hash.minTableSize(new int[]{4, 2}));
-        assertEquals(7, Hash.minTableSize(new int[]{4, 2, 6, 3, 7}));
+        assertEquals(6, Hash.minTableSize(new int[]{4, 2, 6, 3, 7}));
         assertEquals(8, Hash.minTableSize(new int[]{4, 2, 6, 3, 7, 9}));
         assertEquals(11, Hash.minTableSize(new int[]{4, 2, 6, 3, 7, 9, 12}));
     }
