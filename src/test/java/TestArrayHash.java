@@ -105,4 +105,12 @@ public class TestArrayHash {
         assertArrayEquals(new int[]{1, 1, 1, 1, 1, 2, 2, 2, 2}, Hash.sortByHashing(new int[]{1, 2, 2, 1, 1, 1, 2, 1, 2}));
     }
 
+    @Test
+    public void testEqualPairDiffs() {
+        assertTrue(Hash.equalPairDiffs(new int[]{1, 2, 3, 4}));
+        assertFalse(Hash.equalPairDiffs(new int[]{1, 3, 6}));
+        assertFalse(Hash.equalPairDiffs(new int[]{1, 2}));
+        assertTrue(Hash.equalPairDiffs(new int[]{1, 3, 5}));
+    }
+
 }

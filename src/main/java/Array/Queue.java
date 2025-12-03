@@ -133,4 +133,21 @@ public class Queue {
     public void rotateQueue(int k){
     }
 
+    /**
+     * Write another constructor-like method in Array-based Queue implementation which constructs a new array based queue
+     * by adding the elements in the
+     * $list$ of queues one by one in zig-zag fashion. So, the first $k$ elements of the original queue will be
+     * constructed with the first elements of the $k$ queues in the list; the
+     * second $k$ elements of the original queue will be constructed with the
+     * last elements of the $k$ queues in the list, third $k$ elements of the original queue will be
+     * constructed with the second elements of the $k$ queues in the list; etc. The elements from
+     * queues should be recreated (not copied from the queues). You are not
+     * allowed to use enqueue, dequeue, isEmpty functions. You should solve
+     * the question for array implementation. You may assume the length of
+     * each queue is same and even.
+     */
+    public static Queue QueueZigZag(Queue[] list){
+        return null;
+    }
+
 }

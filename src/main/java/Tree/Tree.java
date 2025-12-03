@@ -133,4 +133,12 @@ public class Tree {
         return 0;
     }
 
+    /**
+     * Write a non-recursive method that computes and returns the number of nodes with odd values in a binary search
+     * tree by using queue. You are only allowed to traverse the tree once. You may assume tree has at least 1 node.
+     */
+    public int countOddNodes(){
+        return 0;
+    }
+
 }

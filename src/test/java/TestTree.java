@@ -411,4 +411,33 @@ public class TestTree {
         assertEquals(1 + 2 + 3 + 4 + 5 + 6 + 7, tree.getRoot().sumOfTree(8));
     }
 
+    @Test
+    public void testCountOddNodes() {
+        Tree tree1 = new Tree();
+        tree1.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8});
+        assertEquals(4, tree1.countOddNodes());
+        Tree tree2 = new Tree();
+        tree2.insertArray(new int[]{5, 2, 6, 1, 8, 4, 3, 7});
+        assertEquals(4, tree2.countOddNodes());
+        Tree tree3 = new Tree();
+        tree3.insertArray(new int[]{4, 2});
+        assertEquals(0, tree3.countOddNodes());
+        Tree tree4 = new Tree();
+        tree4.insertArray(new int[]{4, 2, 6, 3, 7});
+        assertEquals(2, tree4.countOddNodes());
+        Tree tree5 = new Tree();
+        tree5.insertArray(new int[]{4, 2, 6, 1, 3, 5, 7});
+        assertEquals(4, tree5.countOddNodes());
+    }
+
+    @Test
+    public void testGreaterThanChildren() {
+        Tree tree1 = new Tree();
+        tree1.insertArray(new int[]{7, 4, 10, 1, 6, 8, 11});
+        assertEquals(2, tree1.getRoot().greaterThanChildren());
+        Tree tree2 = new Tree();
+        tree2.insertArray(new int[]{9, 4, 11, 2, 6, 10, 12});
+        assertEquals(1, tree2.getRoot().greaterThanChildren());
+    }
+
 }

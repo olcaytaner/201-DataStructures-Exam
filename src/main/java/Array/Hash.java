@@ -133,4 +133,14 @@ public class Hash {
         return null;
     }
 
+    /**
+     * Write a static method that should return true if any two distinct pairs absolute difference in the array
+     * have the same value. Your method should run in $O(N^2)$ time. You may
+     * assume array has at least 2 items. You can
+     * use at most one external hash.
+     */
+    public static boolean equalPairDiffs(int[] array){
+        return false;
+    }
+
 }

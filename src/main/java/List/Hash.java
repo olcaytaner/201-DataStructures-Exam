@@ -150,4 +150,13 @@ public class Hash {
         return null;
     }
 
+    /**
+     * Write a static method that takes an array of integers as a parameter and returns true if the
+     * sum of three elements in the array is K. Your method should run in
+     * $O(N^2)$ time. Do not use any external data structures or arrays except
+     * the external hash table.
+     */
+    public static boolean sumOfThreeK(int[] array, int K){
+        return false;
+    }
 }

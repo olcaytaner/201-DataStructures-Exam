@@ -203,4 +203,20 @@ public class TestListQueue {
         assertEquals("ben 1 3 5 7 9 11 2 8 12 4 6", queue.toString());
     }
 
+    @Test
+    public void testSecondMaximum() {
+        Queue q1 = new Queue();
+        q1.insertArray(new int[]{1, 2});
+        assertEquals(1, q1.secondMaximum());
+        Queue q2 = new Queue();
+        q2.insertArray(new int[]{5, 6, 1, 2});
+        assertEquals(5, q2.secondMaximum());
+        Queue q3 = new Queue();
+        q3.insertArray(new int[]{-6, -7, -8});
+        assertEquals(-7, q3.secondMaximum());
+        Queue q4 = new Queue();
+        q4.insertArray(new int[]{10, 15, 20, 18});
+        assertEquals(18, q4.secondMaximum());
+    }
+
 }

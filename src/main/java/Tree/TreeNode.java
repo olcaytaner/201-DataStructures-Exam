@@ -169,4 +169,13 @@ public class TreeNode {
         return 0;
     }
 
+    /**
+     * Write a recursive method which returns the number of nodes which value is greater than its
+     * children's average. You may assume left and right children must exist
+     * for all non-leaf nodes.
+     */
+    public int greaterThanChildren(){
+        return 0;
+    }
+
 }

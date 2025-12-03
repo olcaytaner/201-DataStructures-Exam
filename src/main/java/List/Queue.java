@@ -127,4 +127,12 @@ public class Queue {
      */
     public void thisMustChange(int[] indexOfNonbribers){
     }
+
+    /**
+     * Write a method that returns the second maximum number in a queue. Write the method for the
+     * linked list implementation.
+     */
+    public int secondMaximum(){
+        return 0;
+    }
 }

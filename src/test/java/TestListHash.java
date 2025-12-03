@@ -131,4 +131,12 @@ public class TestListHash {
         assertFalse(Hash.sumOfFourK(new int[]{1, 3, 9, 27, 81, 243, 729}, 700));
     }
 
+    @Test
+    public void testSumOfThreeK() {
+        assertTrue(Hash.sumOfThreeK(new int[]{1, 2, 3, 4}, 6));
+        assertFalse(Hash.sumOfThreeK(new int[]{1, 2, 3}, 5));
+        assertFalse(Hash.sumOfThreeK(new int[]{1, 2, 3, 9}, 15));
+        assertTrue(Hash.sumOfThreeK(new int[]{1, 2, 3, 4}, 9));
+    }
+
 }

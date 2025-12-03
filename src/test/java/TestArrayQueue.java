@@ -1,5 +1,4 @@
 import Array.Queue;
-import List.Stack;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -183,4 +182,31 @@ public class TestArrayQueue {
         queue.rotateQueue(3);
         assertEquals("7 8 4 5 6", queue.toString());
     }
+
+    @Test
+    public void testQueueZigZag() {
+        Queue q1 = new Queue(10);
+        Queue q2 = new Queue(10);
+        Queue q3 = new Queue(10);
+        Queue q4 = new Queue(10);
+        q1.insertArray(new int[]{1, 2, 7, 9});
+        q2.insertArray(new int[]{2, 6, 3, 4});
+        q3.insertArray(new int[]{7, 8, 5, 7});
+        q4.insertArray(new int[]{9, 0, 8, 8});
+        Queue[] arr1 = new Queue[]{q1,q2,q3,q4};
+        Queue main = Queue.QueueZigZag(arr1);
+        assertEquals("1 2 7 9 9 4 7 8 2 6 8 0 7 3 5 8", main.toString());
+        Queue q5 = new Queue(10);
+        Queue q6 = new Queue(10);
+        Queue q7 = new Queue(10);
+        Queue q8 = new Queue(10);
+        q5.insertArray(new int[]{1, 2});
+        q6.insertArray(new int[]{2, 6});
+        q7.insertArray(new int[]{7, 8});
+        q8.insertArray(new int[]{9, 0});
+        Queue[] arr2 = new Queue[]{q5,q6,q7,q8};
+        Queue main2 = Queue.QueueZigZag(arr2);
+        assertEquals("1 2 7 9 2 6 8 0", main2.toString());
+    }
+
 }
