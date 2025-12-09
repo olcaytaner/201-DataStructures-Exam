@@ -51,7 +51,7 @@ public class MaxDHeap extends DHeap {
      * Given the index of a d-heap node, write a method that returns the number of descendants (children, grandchildren,
      * grandgrandchildren, etc.) of that heap node. Do not use any class or external methods.
      */
-    public int descendants1(int no){
+    public int descendants(int no){
         return 0;
     }
 
@@ -60,7 +60,7 @@ public class MaxDHeap extends DHeap {
      * at level $l$ of that heap node. Level 1 corresponds to children, Level 2 corresponds grandchildren, Level 3
      * corresponds grand grand children of that heap node.
      */
-    public int descendants(int no, int level){
+    public int descendantsLevel(int no, int level){
         return 0;
     }
 
@@ -69,7 +69,7 @@ public class MaxDHeap extends DHeap {
      * {\em current} to the array list. Use and modify index to store the HeapNodes into correct positions. Your method
      * should run in ${\cal O}(N)$ time.
      */
-    public int[] descendants2(int current){
+    public int[] descendantsArray(int current){
         return null;
     }
 

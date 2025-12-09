@@ -2,7 +2,7 @@ package Array;
 
 public class Queue {
 
-    private Element array[];
+    private Element[] array;
 
     private int first;
 

@@ -64,16 +64,8 @@ public class MinHeap extends Heap{
      * Given an array of N integers, find the $k$'th maximum of those integers in $\cal O$$(N\log K)$ time. (Hint: Use
      * a min-heap to store $K$ largest elements at a time, in that case the removeMin will return the $k$'th maximum).
      */
-    public int kthMaximum(int[] array, int k){
+    public static int kthMaximum(int[] array, int k){
         return 0;
     }
 
-    /**
-     * Write a method in {\bf MinHeap} class that returns how many of the numbers in the list will percolate down to the
-     * leaves, if they start from the root of the heap tree. When percolating down in the tree, choose a random child
-     * each time. Do not modify the tree while checking. Size represents the size of the array list.
-     */
-    public int numbersPercolateDownToLeaves(int[] list){
-        return 0;
-    }
 }

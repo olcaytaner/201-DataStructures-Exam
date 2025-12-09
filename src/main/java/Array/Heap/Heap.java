@@ -2,7 +2,7 @@ package Array.Heap;
 
 public abstract class Heap {
 
-    protected HeapNode array[];
+    protected HeapNode[] array;
     protected int count;
 
     protected int N;
@@ -56,4 +56,17 @@ public abstract class Heap {
         percolateUp(count - 1);
     }
 
+    public void insertArray(int[] data){
+        for (int datum : data) {
+            insert(new HeapNode(datum, datum));
+        }
+    }
+
+    public String toString(){
+        String s = "";
+        for (int i = 0; i < count; i++){
+            s += array[i].getData() + " ";
+        }
+        return s.trim();
+    }
 }
