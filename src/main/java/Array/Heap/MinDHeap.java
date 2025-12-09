@@ -47,4 +47,30 @@ public class MinDHeap extends DHeap {
         }
     }
 
+    /**
+     * Write a recursive method in {\bf MinDHeap} class which fills the ascendants (including also current) of the
+     * HeapNode with index {\em current} to the array list. Use and modify index to store the HeapNodes into correct
+     * positions. Your method should run in ${\cal O}(\log N)$ time. You are not allowed to use any class method.
+     */
+    public int[] ascendants(int current){
+        return null;
+    }
+
+    /**
+     * Write the method in {\bf MinDHeap} class that finds the number of places in the heap, which can be replaced with
+     * the given value key.
+     */
+    public int numberOfPlacesToReplace(int key){
+        return 0;
+    }
+
+    /**
+     * Write the method in {\bf MinDHeap} class that returns the sum of the lengths of the change intervals of each
+     * node. A change interval of a node $N$ is defined with the minimum and maximum values that can be attained by $N$
+     * without changing any other node. For root node, take the minimum as $min$. For leaf nodes, take the maximum as
+     * $max$.
+     */
+    public int sumOfMaxChange(int min, int max){
+        return 0;
+    }
 }

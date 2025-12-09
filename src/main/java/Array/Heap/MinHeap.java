@@ -44,4 +44,36 @@ public class MinHeap extends Heap{
         }
     }
 
+    /**
+     * Write the method in {\bf MinHeap} class that returns the number of nodes in the heap whose children can be
+     * swapped without hurting the heap property. Your method should run in ${\cal O}(N)$ time.
+     */
+    public int howManyChildrenCanBeSwapped(){
+        return 0;
+    }
+
+    /**
+     * Write the method in {\bf MinHeap} class which returns true if the largest value appears on the leftmost node. You
+     * may not use any additional data structures.
+     */
+    public boolean isLargestLeftMost(){
+        return false;
+    }
+
+    /**
+     * Given an array of N integers, find the $k$'th maximum of those integers in $\cal O$$(N\log K)$ time. (Hint: Use
+     * a min-heap to store $K$ largest elements at a time, in that case the removeMin will return the $k$'th maximum).
+     */
+    public int kthMaximum(int[] array, int k){
+        return 0;
+    }
+
+    /**
+     * Write a method in {\bf MinHeap} class that returns how many of the numbers in the list will percolate down to the
+     * leaves, if they start from the root of the heap tree. When percolating down in the tree, choose a random child
+     * each time. Do not modify the tree while checking. Size represents the size of the array list.
+     */
+    public int numbersPercolateDownToLeaves(int[] list){
+        return 0;
+    }
 }
