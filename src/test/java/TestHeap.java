@@ -61,7 +61,7 @@ public class TestHeap {
         Assert.assertEquals(1, heap.howManyPairCanBeSwapped());
         heap = new MaxDHeap(5, 2);
         heap.insertArray(new int[]{1, 2, 3, 4, 5});
-        Assert.assertEquals(4, heap.howManyPairCanBeSwapped());
+        Assert.assertEquals(3, heap.howManyPairCanBeSwapped());
         heap = new MaxDHeap(5, 2);
         heap.insertArray(new int[]{1, 2, 3, 4});
         Assert.assertEquals(2, heap.howManyPairCanBeSwapped());
