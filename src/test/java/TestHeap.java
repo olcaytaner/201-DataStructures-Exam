@@ -95,7 +95,7 @@ public class TestHeap {
 
     @Test
     public void testAscendantsMaxHeap() {
-        MaxHeap heap = new MaxHeap(10);
+        MaxHeap heap = new MaxHeap(20);
         heap.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16});
         Assert.assertArrayEquals(new int[]{}, heap.ascendants(0));
         Assert.assertArrayEquals(new int[]{0}, heap.ascendants(1));
@@ -129,7 +129,7 @@ public class TestHeap {
 
     @Test
     public void testAscendantsMinDHeap() {
-        MinDHeap heap = new MinDHeap(10, 2);
+        MinDHeap heap = new MinDHeap(20, 2);
         heap.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16});
         Assert.assertArrayEquals(new int[]{}, heap.ascendants(0));
         Assert.assertArrayEquals(new int[]{0}, heap.ascendants(1));
