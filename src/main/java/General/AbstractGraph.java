@@ -2,6 +2,7 @@ package General;
 
 import Array.DisjointSet;
 import List.Graph.Edge;
+import List.Graph.Graph;
 
 import java.util.Arrays;
 
@@ -15,6 +16,9 @@ public abstract class AbstractGraph {
 
     protected abstract void depthFirstSearch(boolean[] visited, int fromNode);
     protected abstract void breadthFirstSearch(boolean[] visited, int startNode);
+
+    public AbstractGraph(){
+    }
 
     protected Path[] initializePaths(int source){
         Path[] paths = new Path[vertexCount];
