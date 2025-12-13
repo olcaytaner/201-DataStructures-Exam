@@ -22,6 +22,19 @@ public class DisjointSet {
         this.count = count;
     }
 
+    public void union(int index1, int index2){
+        int x = findSetIterative(index1);
+        int y = findSetIterative(index2);
+        if (sets[x].getDepth() < sets[y].getDepth()){
+            sets[x].setParent(y);
+        } else {
+            sets[y].setParent(x);
+            if (sets[x].getDepth() == sets[y].getDepth()){
+                sets[x].incrementDepth();
+            }
+        }
+    }
+
     public int findSetRecursive(int index){
         int parent = sets[index].getParent();
         if (parent != index){
@@ -39,11 +52,21 @@ public class DisjointSet {
         return parent;
     }
 
+    public int setCount(){
+        int total = 0;
+        for (int i = 0; i < count; i++){
+            if (findSetRecursive(i) == i){
+                total++;
+            }
+        }
+        return total;
+    }
+
     /**
      * Given in the index of a set as {\em current}, write a recursive method that returns the ascendants (including also
      * current) of that set as an array. You are not allowed to use any class method except getParent.
      */
-    int[] ascendants1(int current){
+    public int[] ascendants1(int current){
         return null;
     }
 
@@ -51,7 +74,7 @@ public class DisjointSet {
      * Given the index of a set, write a non-recursive function that returns the ancestors (itself, parent, grandparent,
      * etc.). The size of the returning array should be as much as needed.
      */
-    int[] ascendants2(int index){
+    public int[] ascendants2(int index){
         return null;
     }
 
@@ -71,7 +94,7 @@ public class DisjointSet {
      * 3 equalities. Write the function that finds the number of equalities when combined where $N$ represents the number
      * of variables, left and right represent the left and right parts of the equalities.
      */
-    int combine(int N, int[] left, int[] right){
+    public static int combine(int N, int[] left, int[] right){
         return 0;
     }
 
@@ -79,7 +102,7 @@ public class DisjointSet {
      * Given in the index of a set as {\em current}, write a recursive method that returns the descendants of that set to
      * the array list.
      */
-    int[] descendants1(int current){
+    public int[] descendants1(int current){
         return null;
     }
 
@@ -87,7 +110,7 @@ public class DisjointSet {
      * Given in the index of a set as {\em current}, write a non-recursive method that returns the descendants of that set to
      * the array list.
      */
-    int[] descendants2(int current){
+    public int[] descendants2(int current){
         return null;
     }
 
@@ -95,7 +118,7 @@ public class DisjointSet {
      * Write the method which returns the indexes of all sets in the disjoint set where a set with index $index$ is in
      * that set.
      */
-    int[] getSetWithIndex(int index){
+    public int[] getSetWithIndex(int index){
         return null;
     }
 
@@ -103,7 +126,7 @@ public class DisjointSet {
      * Given the index of a set, write a method that returns the indexes of its grandchildren as a linked list. Do not
      * use any class or external methods.
      */
-    LinkedList grandChildren(int index){
+    public LinkedList grandChildren(int index){
         return null;
     }
 
@@ -111,7 +134,7 @@ public class DisjointSet {
      * Write a method that returns true when the given disjoint set is valid, that is from every node $n$, when the
      * ascendants are traversed, no circularity is observed (that is you do not encounter the node $n$ again).
      */
-    boolean isValid(){
+    public boolean isValid(){
         return false;
     }
 
@@ -121,7 +144,7 @@ public class DisjointSet {
      * structure. A disjoint set is a triplet, if the number of sets in that disjoint set is 3. Do not use any class or
      * external methods.
      */
-    int numberOfTriplets(){
+    public int numberOfTriplets(){
         return 0;
     }
 
@@ -132,7 +155,7 @@ public class DisjointSet {
      * bitten whoWasBitten[i] correspondingly. Count represents the number of people in the beginning. Size represents
      * the size of the arrays whoBites and whoWasBitten. You are only allowed to use one external Disjoint Set.
      */
-    int numberOfSurvivors(int count, int[] whoBites, int[] whoWasBitten){
+    public static int numberOfSurvivors(int count, int[] whoBites, int[] whoWasBitten){
         return 0;
     }
 
@@ -141,7 +164,7 @@ public class DisjointSet {
      * original {\em union} method. Merge the sets such that the resulting merged set will have the minimum depth.
      * Update also the depth if needed.
      */
-    void union2(int index1, int index2, int index3){
+    public void union2(int index1, int index2, int index3){
 
     }
 
@@ -150,7 +173,7 @@ public class DisjointSet {
      * original unionOfSets method. Merge the sets such that the resulting merged set will have the minimum depth. Use
      * an algorithm that sorts the sets according to their depths.
      */
-    void unionOfSets(int[] indexList, int N){
+    public void unionOfSets(int[] indexList){
 
     }
 
@@ -159,7 +182,7 @@ public class DisjointSet {
      * direct children of $S$ and $S$ itself will be disjoint sets themselves. You don't need to modify the depths. Do
      * not use any class or external methods.
      */
-    void unmerge(int index){
+    public void unmerge(int index){
 
     }
 
@@ -168,7 +191,7 @@ public class DisjointSet {
      * maximum value of its children. Any node with no children has value 1. You are not allowed to use any class method
      * except getParent.
      */
-    int value(int index){
+    public int value(int index){
         return 0;
     }
 
