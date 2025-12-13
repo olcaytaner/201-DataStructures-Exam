@@ -46,7 +46,7 @@ public class MergeSort implements Sort{
      * number of elements which are in A or B or C. Assume that all arrays have the same size and the last elements of
      * all three arrays are the same.  Your algorithm should run in ${\cal O}(N)$ time.
      */
-    int inAorBorC(int[] A, int[] B, int[]C){
+    public int inAorBorC(int[] A, int[] B, int[]C){
         return 0;
     }
 
@@ -54,7 +54,7 @@ public class MergeSort implements Sort{
      * Suppose arrays representing sets A and B are both sorted. Write a method with {\bf linear complexity} in
      * {\bf MergeSort} class that finds if C is the intersection of sets A and B. You are only allowed to use 1 loop.
      */
-    boolean isIntersection(int[] A, int[] B, int[] C){
+    public boolean isIntersection(int[] A, int[] B, int[] C){
         return false;
     }
 
@@ -62,7 +62,7 @@ public class MergeSort implements Sort{
      * Suppose arrays representing sets A and B are both sorted. Write a linear time method that finds if A is a subset
      * of B.
      */
-    boolean isSubset(int[] A, int[] B){
+    public boolean isSubset(int[] A, int[] B){
         return false;
     }
 
@@ -70,7 +70,7 @@ public class MergeSort implements Sort{
      * Suppose arrays representing sets A and B are both sorted. Write a method with {\bf linear complexity} in
      * {\bf MergeSort} class that finds if A is a superset of B.
      */
-    boolean isSuperSet(int[] A, int[] B){
+    public boolean isSuperSet(int[] A, int[] B){
         return false;
     }
 
@@ -79,7 +79,7 @@ public class MergeSort implements Sort{
      * B = (A - B) $\cup$ (B - A) (the elements that are in A but not in B and the elements that are in B but not in A)
      * in  ${\cal O}$($N$) time.
      */
-    int symmetric(int[] A, int[] B){
+    public int symmetric(int[] A, int[] B){
         return 0;
     }
 }

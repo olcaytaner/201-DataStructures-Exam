@@ -21,7 +21,7 @@ public class InsertionSort implements Sort{
      * Modify the original insertion sort so that it will use the same algorithm but sorts the elements in the linked
      * list $l$. You can only use getPrevious method as an external method except getters and setters.
      */
-    void insertionSort(LinkedList l){
+    public void insertionSort(LinkedList l){
 
     }
 
@@ -30,7 +30,7 @@ public class InsertionSort implements Sort{
      * array. A sublist start from index i and continues with indexes i+1, i+2, \ldots, i+k. Your function should run
      * in ${\mathcal O}(N)$ time.
      */
-    int maxSortLength(int[] A){
+    public int maxSortLength(int[] A){
         return 0;
     }
 
@@ -39,7 +39,7 @@ public class InsertionSort implements Sort{
      * uses B as a secondary key. Modify array B also. N is the number of elements in the array. Your modified method
      * should run in ${\cal O}(N^2)$ time.
      */
-    void sort2(int[] A, int[] B){
+    public void sort2(int[] A, int[] B){
     }
 
 }

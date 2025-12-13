@@ -61,7 +61,7 @@ public class Graph extends AbstractGraph {
      * distance to city B is the smallest across all cities compared. Identify the number of nearby cities for every
      * city, and use one array to store the number of nearby cities for every city.
      */
-    int capitalCity(){
+    public int capitalCity(){
         return 0;
     }
 
@@ -70,7 +70,7 @@ public class Graph extends AbstractGraph {
      * determines whether the graph contains any cycles starting form vertex v. Use the same idea in Depth-First
      * Search (DFS). Your method should return true if there is at least one cycle in the graph, and false otherwise.
      */
-    boolean hasCycle(int v, boolean[] visited){
+    public boolean hasCycle(int v, boolean[] visited){
         return false;
     }
 
@@ -79,7 +79,7 @@ public class Graph extends AbstractGraph {
      * matrix representation. A graph $(V_1, V_2)$ is said to be a complete bipartite graph if every vertex in
      * $V_1$ is connected to every vertex of $V_2$.
      */
-    boolean isCompleteBipartite(){
+    public boolean isCompleteBipartite(){
         return false;
     }
 
@@ -89,7 +89,7 @@ public class Graph extends AbstractGraph {
      * n-1 edges as shown in example star graph below. You are not allowed to use depth first search or breadth
      * first search.
      */
-    boolean isStarGraph(){
+    public boolean isStarGraph(){
         return false;
     }
 
@@ -98,7 +98,7 @@ public class Graph extends AbstractGraph {
      * otherwise. A graph $G_1$ is a subgraph of graph $G_2$ if every edge of graph $G_1$ is also an edge in graph
      * $G_2$.
      */
-    boolean isSubGraph(Graph g){
+    public boolean isSubGraph(Graph g){
         return false;
     }
 
@@ -107,7 +107,7 @@ public class Graph extends AbstractGraph {
      * assuming that the graph is a circular graph. A graph is circular if all the nodes create a circular path.
      * Each node is connected to two others, like points on a circle.
      */
-    int lengthOfCircle(){
+    public int lengthOfCircle(){
         return 0;
     }
 
@@ -118,7 +118,7 @@ public class Graph extends AbstractGraph {
      * subgraph. You are not allowed to use depth first search or breadth first search. In the graph below
      * (1, 2, 5), (3, 6) and (4, 7) are complete subgraphs.
      */
-    int numberOfCompleteSubGraphs(){
+    public int numberOfCompleteSubGraphs(){
         return 0;
     }
 
@@ -128,14 +128,14 @@ public class Graph extends AbstractGraph {
      * Write the method which calculates and returns $M^2$ for a graph. Your method should run in ${\cal O}(V^3)$
      * time.
      */
-    int[][] numberOfWaysInTwoMoves(){
+    public int[][] numberOfWaysInTwoMoves(){
         return null;
     }
 
     /**
      * Write a method to find the out-degree of a node given its index.
      */
-    int outDegree(int index){
+    public int outDegree(int index){
         return 0;
     }
 
@@ -144,7 +144,7 @@ public class Graph extends AbstractGraph {
      * nodes whose outgoing node lists are the same, false otherwise. Your method should run in ${\cal O}(V^3)$
      * time.
      */
-    boolean outgoingListSame(){
+    public boolean outgoingListSame(){
         return false;
     }
 

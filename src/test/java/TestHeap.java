@@ -191,7 +191,7 @@ public class TestHeap {
         Assert.assertTrue(heap.isLargestLeftMost());
         heap = new MinHeap(10);
         heap.insertArray(new int[]{1, 2, 3, 4, 5});
-        Assert.assertTrue(heap.isLargestLeftMost());
+        Assert.assertFalse(heap.isLargestLeftMost());
     }
 
     @Test

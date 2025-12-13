@@ -25,7 +25,7 @@ public class SelectionSort implements Sort{
      * Modify the original selection sort so that it will use the same algorithm but sorts the elements in the linked
      * list l. Write your method in SelectionSort class. You should swap the data not the links using setData method.
      */
-    void selectionSort(LinkedList l){
+    public void selectionSort(LinkedList l){
     }
 
     /**
@@ -34,7 +34,7 @@ public class SelectionSort implements Sort{
      * will be 10, 20, 30, 40, and it will return index array as 1, 0, 3, 2 (10 was at 1., 20 was at 0., 30 was at 3.,
      * 40 was at 2. position in the beginning).
      */
-    int[] sortNew(int[] A, int[] B){
+    public int[] sortNew(int[] A, int[] B){
         return null;
     }
 }

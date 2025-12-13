@@ -24,7 +24,7 @@ public class BubbleSort implements Sort{
      * C array. Do not modify arrays B and C. N is the number of elements in the array. Your modified method should run
      * in ${\cal O}(N^2)$ time.
      */
-    void sort2(int[] A, int[] B, int[] C){
+    public void sort2(int[] A, int[] B, int[] C){
     }
 
 }

@@ -36,7 +36,7 @@ public class QuickSort implements Sort{
      * Suppose arrays representing sets A and B are both sorted. Write a linear time method that finds the minimum
      * difference between any element from A and any element from B.
      */
-    int minDifference(int[] A, int[] B){
+    public int minDifference(int[] A, int[] B){
         return 0;
     }
 
@@ -51,7 +51,7 @@ public class QuickSort implements Sort{
      * If i $<$ j, swap the contents of i and j.
      * Continue with step 2.
      */
-    void oddsBeforeEvens(int[] A){
+    public void oddsBeforeEvens(int[] A){
 
     }
 
@@ -60,7 +60,7 @@ public class QuickSort implements Sort{
      * divisible by 3 first, then the numbers which division remains 1, and lastly the numbers which division remains
      * 2 similar to the partition algorithm in QuickSort.
      */
-    void quickTriple(int[] A){
+    public void quickTriple(int[] A){
 
     }
 
@@ -70,7 +70,7 @@ public class QuickSort implements Sort{
      * are equal to X will be in the second part, and the numbers that are larger than X will be in the third part. You
      * may not use any additional data structure or array.
      */
-    void threePartitionArray(int[] A, int X){
+    public void threePartitionArray(int[] A, int X){
 
     }
 }
