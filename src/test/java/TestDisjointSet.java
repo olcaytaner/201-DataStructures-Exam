@@ -13,10 +13,10 @@ public class TestDisjointSet {
         Assert.assertArrayEquals(new int[]{2, 1}, disjointSet.ascendants1(2));
         Assert.assertArrayEquals(new int[]{1}, disjointSet.ascendants1(1));
         disjointSet.union(1, 3);
-        Assert.assertArrayEquals(new int[]{2, 1}, disjointSet.ascendants1(3));
+        Assert.assertArrayEquals(new int[]{3, 1}, disjointSet.ascendants1(3));
         disjointSet.union(4, 5);
         disjointSet.union(1, 5);
-        Assert.assertArrayEquals(new int[]{4, 1}, disjointSet.ascendants1(5));
+        Assert.assertArrayEquals(new int[]{5, 4, 1}, disjointSet.ascendants1(5));
     }
 
     @Test
@@ -28,10 +28,10 @@ public class TestDisjointSet {
         Assert.assertArrayEquals(new int[]{2, 1}, disjointSet.ascendants2(2));
         Assert.assertArrayEquals(new int[]{1}, disjointSet.ascendants2(1));
         disjointSet.union(1, 3);
-        Assert.assertArrayEquals(new int[]{2, 1}, disjointSet.ascendants2(3));
+        Assert.assertArrayEquals(new int[]{3, 1}, disjointSet.ascendants2(3));
         disjointSet.union(4, 5);
         disjointSet.union(1, 5);
-        Assert.assertArrayEquals(new int[]{4, 1}, disjointSet.ascendants2(5));
+        Assert.assertArrayEquals(new int[]{5, 4, 1}, disjointSet.ascendants2(5));
     }
 
     @Test
