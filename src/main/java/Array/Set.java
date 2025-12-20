@@ -11,6 +11,10 @@ public class Set {
         depth = 1;
     }
 
+    public int getData(){
+        return data;
+    }
+
     public int getParent() {
         return parent;
     }

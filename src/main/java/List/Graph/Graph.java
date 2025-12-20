@@ -15,6 +15,19 @@ public class Graph extends AbstractGraph {
         }
     }
 
+    public Graph(int vertexCount, int[][] edges){
+        this(vertexCount);
+        for (int[] edge : edges) {
+            if (edge.length == 2) {
+                addEdge(edge[0], edge[1]);
+            } else {
+                if (edge.length == 3){
+                    addEdge(edge[0], edge[1], edge[2]);
+                }
+            }
+        }
+    }
+
     public void addEdge(int from, int to){
         Edge edge = new Edge(from, to, 1);
         edges[from].insert(edge);
@@ -56,6 +69,18 @@ public class Graph extends AbstractGraph {
                 edge = edge.getNext();
             }
         }
+    }
+
+    public String toString(){
+        String s = "";
+        for (int i = 0; i < vertexCount; i++){
+            Edge edge = edges[i].getHead();
+            while (edge != null){
+                s += edge.getFrom() + " " + edge.getTo() + " " +  edge.getWeight() + "\n";
+                edge = edge.getNext();
+            }
+        }
+        return s;
     }
 
     /**
