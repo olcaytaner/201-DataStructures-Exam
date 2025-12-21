@@ -85,10 +85,10 @@ public class TestListGraph {
     @Test
     public void testInverseGraph(){
         Graph graph = new Graph(3,
-                new int[][]{{0, 0}, {0, 1}, {1, 2},
-                {1, 0}, {2, 1}});
+                new int[][]{{0, 0}, {0, 1}, {1, 0},
+                        {1, 2}, {2, 1}});
         Graph expected = new Graph(3,
-                new int[][]{{1, 1}, {2, 2}, {0, 2}, {2, 0}});
+                new int[][]{{1, 1}, {2, 0}, {2, 2}, {0, 2}});
         Graph actual = graph.inverseGraph();
         assertEquals(expected.toString(), actual.toString());
     }
