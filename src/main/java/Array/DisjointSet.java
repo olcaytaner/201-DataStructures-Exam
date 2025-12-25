@@ -195,4 +195,17 @@ public class DisjointSet {
         return 0;
     }
 
+    /**
+     Write the method in {\bf DisjointSet} class which returns the number of sets that have same height as the set with given
+     index. The height of an element is calculated by the number of nodes visited when we traverse the tree starting from that set and continue
+     through the parent links until the top. Do not use any class or external methods.
+     */
+    public int sameHeightSets(int index) { return 0; }
+
+    /**
+     Write the method in {\bf DisjointSet} class which returns count of sets where direct children's~(not including grandchildren) total data value is equal
+     to set's parent's data value. Root node's parent is itself and a leaf node does have any children. Do not use any class or external
+     methods.
+     */
+    public int childrenParentEqual() { return 0; }
 }

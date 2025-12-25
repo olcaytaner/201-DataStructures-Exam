@@ -196,4 +196,54 @@ public class TestDisjointSet {
         Assert.assertEquals(10, disjointSet.value(7));
     }
 
+    @Test
+    public void testSameHeightSets() {
+        DisjointSet disjointSet = new DisjointSet(10);
+        disjointSet.union(1, 2);
+        disjointSet.union(2, 3);
+        disjointSet.union(5, 6);
+        disjointSet.union(5, 7);
+        Assert.assertEquals(4, disjointSet.sameHeightSets(3));
+        Assert.assertEquals(6, disjointSet.sameHeightSets(1));
+
+        disjointSet = new DisjointSet(4);
+        disjointSet.union(0, 1);
+        disjointSet.union(2, 3);
+        Assert.assertEquals(2, disjointSet.sameHeightSets(1));
+        Assert.assertEquals(2, disjointSet.sameHeightSets(2));
+
+        disjointSet = new DisjointSet(6);
+        disjointSet.union(1, 2);
+        disjointSet.union(3, 4);
+        disjointSet.union(3, 5);
+        disjointSet.union(3, 4);
+        Assert.assertEquals(3, disjointSet.sameHeightSets(1));
+        Assert.assertEquals(3, disjointSet.sameHeightSets(3));
+    }
+
+    @Test
+    public void testChildrenParentEqual() {
+        DisjointSet disjointSet = new DisjointSet(10);
+        disjointSet.union(3, 1);
+        disjointSet.union(1, 2);
+        disjointSet.union(5, 6);
+        disjointSet.union(5, 7);
+        Assert.assertEquals(2, disjointSet.childrenParentEqual());
+
+        disjointSet = new DisjointSet(8);
+        disjointSet.union(3, 1);
+        disjointSet.union(1, 2);
+        disjointSet.union(6, 5);
+        disjointSet.union(6, 7);
+        Assert.assertEquals(2, disjointSet.childrenParentEqual());
+
+        disjointSet = new DisjointSet(8);
+        disjointSet.union(0, 3);
+        disjointSet.union(3, 4);
+        disjointSet.union(1, 2);
+        disjointSet.union(5, 6);
+        disjointSet.union(5, 7);
+        Assert.assertEquals(2, disjointSet.childrenParentEqual());
+    }
+
 }

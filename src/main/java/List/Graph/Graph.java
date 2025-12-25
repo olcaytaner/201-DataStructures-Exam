@@ -226,5 +226,10 @@ public class Graph extends AbstractGraph {
         return null;
     }
 
-
+    /**
+     Write a new constructor for Graph class for linked list implementation which constructs a new graph by insersection of all graphs in the
+     graph array, where edge is included in the constructed when such edge appears in at least minCount number of graphs. Size represents the
+     number of graphs in graphs variable. You may assume that all graphs have the same size and same set of vertices.
+     */
+    public Graph(Graph[] graphs, int minCount) {}
 }

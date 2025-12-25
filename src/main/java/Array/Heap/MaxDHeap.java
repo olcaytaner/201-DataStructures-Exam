@@ -90,4 +90,10 @@ public class MaxDHeap extends DHeap {
         return 0;
     }
 
+    /**
+     Write the method in {\bf MaxDHeap} class that finds the second minimum item. You may not use any additional data
+     structures. You may assume there are more than 2 items in the heap. You should not use more than N comparisons (Sum of ifs else
+     ifs elses is at most N).
+     */
+    public int secondMinimum() { return 0;}
 }

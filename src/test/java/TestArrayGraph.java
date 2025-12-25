@@ -144,4 +144,20 @@ public class TestArrayGraph {
                 {3, 4}, {4, 0}});
         assertFalse(graph.outgoingListSame());
     }
+
+    @Test
+    public void testIsTwoGraph(){
+        Graph graph = new Graph(4,
+                new int[][]{{0, 1}, {0, 3}, {1, 0},
+                {1, 2}, {2, 1}, {2, 3},
+                {3, 0}, {3, 2}});
+        assertTrue(graph.isTwoGraph());
+
+        graph = new Graph(4,
+                new int[][]{{0, 1}, {0, 3}, {1, 0},
+                {1, 2}, {1, 3}, {2, 1},
+                {2, 3}, {3, 0}, {3, 1}, {3, 2}});
+        assertFalse(graph.isTwoGraph());
+    }
+
 }

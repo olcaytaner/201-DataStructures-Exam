@@ -68,4 +68,10 @@ public class MinHeap extends Heap{
         return 0;
     }
 
+    /**
+     Write a method in {\bf MinHeap} class that returns the average number of percolate up operations for numbers given in the
+     list, if each number is assumed to be inserted independently to the heap. Do not modify the heap while checking.
+     */
+    public double averagePercolateUp(int[] list) { return 0; }
+
 }

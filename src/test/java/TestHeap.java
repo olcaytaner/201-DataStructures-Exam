@@ -202,4 +202,33 @@ public class TestHeap {
         Assert.assertEquals(5, MinHeap.kthMaximum(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}, 5));
     }
 
+    @Test
+    public void testSecondMinimum() {
+        MaxDHeap heap = new MaxDHeap(10, 3);
+        heap.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8});
+        Assert.assertEquals(2, heap.secondMinimum());
+        heap = new MaxDHeap(15, 2);
+        heap.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8,0,10});
+        Assert.assertEquals(1, heap.secondMinimum());
+        heap = new MaxDHeap(20, 4);
+        heap.insertArray(new int[]{-2, 2, 3, 4, 5, 6, 7, 8,9,10,11,12,0,-1});
+        Assert.assertEquals(-1, heap.secondMinimum());
+    }
+
+    @Test
+    public void testAveragePercolateUp() {
+        MinHeap heap = new MinHeap(10);
+        heap.insertArray(new int[]{1, 3, 5, 7, 8, 10, 12});
+        int[] items = new int[]{2, 4, 15};
+        Assert.assertEquals(1, heap.averagePercolateUp(items), 0.0001);
+        heap = new MinHeap(10);
+        heap.insertArray(new int[]{1, 3, 4, 5, 6, 7, 8});
+        int[] items2 = new int[]{9, 10, 2};
+        Assert.assertEquals(0.6666, heap.averagePercolateUp(items2), 0.0001);
+        heap = new MinHeap(10);
+        heap.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8});
+        int[] items3 = new int[]{1, 3, 5};
+        Assert.assertEquals(1.33333, heap.averagePercolateUp(items3), 0.0001);
+    }
+
 }

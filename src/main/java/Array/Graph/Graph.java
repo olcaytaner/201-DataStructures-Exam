@@ -173,4 +173,11 @@ public class Graph extends AbstractGraph {
         return false;
     }
 
+    /**
+     Write the method in array~(adjacency matrix) implementation of undirected Graph which returns whether graph is a two-graph or not. You may assume
+     graph is connected. A two-graph is a graph where degree of all vertices are 2. You are not allowed to use depth first search or breadth
+     first search.
+     */
+    public boolean isTwoGraph() { return false; }
+
 }

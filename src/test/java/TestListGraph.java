@@ -240,4 +240,29 @@ public class TestListGraph {
         assertEquals(expected.length, actual.length);
     }
 
+    @Test
+    public void testGraphMinCount(){
+        Graph graph = new Graph(4,
+                new int[][]{{0, 1}, {1, 2}, {2, 3}, {3, 0}});
+        Graph graph2 = new Graph(4,
+                new int[][]{{0, 1}, {1, 3}, {2, 3}, {3, 1}});
+        Graph[] graphs = new Graph[2];
+        graphs[0] = graph;
+        graphs[1] = graph2;
+        Graph result = new Graph(graphs, 2);
+        assertEquals("0 1 1\n2 3 1\n", result.toString());
+        graph = new Graph(4,
+                new int[][]{{0, 1}, {1, 2}, {2, 3}, {3, 0}});
+        graph2 = new Graph(4,
+                new int[][]{{0, 1}, {1, 3}, {2, 3}, {3, 1}});
+        Graph graph3 = new Graph(4,
+                new int[][]{{0, 1}, {0, 2}, {1, 3}, {2, 1}});
+        Graph[] graphsJoint = new Graph[3];
+        graphsJoint[0] = graph;
+        graphsJoint[1] = graph2;
+        graphsJoint[2] = graph3;
+        result = new Graph(graphsJoint, 2);
+        assertEquals("0 1 1\n1 3 1\n2 3 1\n", result.toString());
+    }
+
 }
