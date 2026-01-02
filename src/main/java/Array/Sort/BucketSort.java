@@ -66,8 +66,8 @@ public class BucketSort implements Sort{
      * the given array A, which is already sorted. Your function must run in ${\cal O}(N)$ time. You should not modify
      * the input array A.
      */
-    public void topThreeFrequent(int[] A){
-
+    public int[] topThreeFrequent(int[] A){
+        return null;
     }
 
     /**
@@ -75,7 +75,7 @@ public class BucketSort implements Sort{
      * the given array A, which is already sorted. Your function must run in O(N) time. You can not modify the input
      * array A.
      */
-    public void topTwoFrequent(int[] A){
-
+    public int[] topTwoFrequent(int[] A){
+        return null;
     }
 }
