@@ -265,4 +265,21 @@ public class TestListGraph {
         assertEquals("0 1 1\n1 3 1\n2 3 1\n", result.toString());
     }
 
+    @Test
+    public void testOddEdgeGraph(){
+        Graph graph = new Graph(4);
+        graph.addEdge(0, 1);
+        graph.addEdge(1, 2);
+        graph.addEdge(2, 3);
+        graph.addEdge(3, 0);
+        assertEquals(0, graph.oddEdgeGraph());
+
+        Graph graph2 = new Graph(6);
+        graph2.addEdge(0, 1);
+        graph2.addEdge(1, 3);
+        graph2.addEdge(5, 3);
+        graph2.addEdge(3, 0);
+        assertEquals(2, graph2.oddEdgeGraph());
+    }
+
 }

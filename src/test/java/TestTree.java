@@ -440,4 +440,14 @@ public class TestTree {
         assertEquals(1, tree2.getRoot().greaterThanChildren());
     }
 
+    @Test
+    public void testQuadraticSummation() {
+        Tree tree1 = new Tree();
+        tree1.insertArray(new int[]{2, 3, 10, 1, 6});
+        assertEquals(150, tree1.getRoot().quadraticSummation());
+        Tree tree2 = new Tree();
+        tree2.insertArray(new int[]{2, 3, 1});
+        assertEquals(14, tree2.getRoot().quadraticSummation());
+    }
+
 }

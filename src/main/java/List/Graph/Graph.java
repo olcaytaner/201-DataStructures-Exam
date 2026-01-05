@@ -232,4 +232,11 @@ public class Graph extends AbstractGraph {
      number of graphs in graphs variable. You may assume that all graphs have the same size and same set of vertices.
      */
     public Graph(Graph[] graphs, int minCount) {}
+
+    /**
+     * Write the method in linked list implementation which returns the number of odd-valued
+     * edges, where an edge is odd-valued if its two distinct node values are both odd.
+     * You are not allowed to use extra data structures.
+     */
+    public int oddEdgeGraph() { return 0; }
 }

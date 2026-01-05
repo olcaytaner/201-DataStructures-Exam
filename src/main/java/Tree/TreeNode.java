@@ -178,4 +178,10 @@ public class TreeNode {
         return 0;
     }
 
+    /**
+     *  Write a recursive method in TreeNode class that computes the sum of quadratic powers of
+     * all keys in a binary search tree.
+     */
+    public int quadraticSummation() { return 0;}
+
 }

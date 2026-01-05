@@ -315,4 +315,11 @@ public class LinkedList {
     public void compressConsecutiveDouble() {
     }
 
+    /**
+     *  Write the static method that returns the Pell numbers between A and B (both inclusive) as a singly linked list. The first
+     *  two Pell numbers are Z_0 = 0, Z_1 = 1, and the general formula is Z_n = 2Z_{n-1} + Z_{n-2}.
+     *  Assume that A >= 2 and B > A.
+     */
+    public static LinkedList pellNumber(int A, int B) { return new LinkedList(); }
+
 }

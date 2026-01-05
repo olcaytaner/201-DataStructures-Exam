@@ -335,4 +335,24 @@ public class TestSort {
         assertArrayEquals(new int[]{3, 7, 1, 5, 9}, B2);
     }
 
+    @Test
+    public void testSecondLeastFrequent(){
+        BucketSort bucket = new BucketSort(100000);
+        int[] A = new int[]{1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 7};
+        assertEquals(4, bucket.secondLeastFrequent(A));
+
+        int[] B = new int[]{1, 1, 2, 2, 2, 2, 3, 3, 3, 7, 7, 7, 9};
+        assertEquals(1, bucket.secondLeastFrequent(B));
+    }
+
+    @Test
+    public void testMinMaxRepeat(){
+        QuickSort quickSort = new QuickSort();
+        int[] A = new int[]{1, 8, 7, 3, 4, 5, 9, 2};
+        assertArrayEquals(new int[]{1, 9, 2, 8, 3, 7, 4, 5}, quickSort.minMaxRepeat(A));
+
+        int[] B = new int[]{8, 7, 6, 5, 4, 3, 2, 1};
+        assertArrayEquals(new int[]{1, 8, 2, 7, 3, 6, 4, 5}, quickSort.minMaxRepeat(B));
+    }
+
 }

@@ -620,4 +620,18 @@ public class TestLinkedList {
         doublyList.insertArray(new int[]{1, 2, 3, 4, 5, 4, 3, 2, 1, 10});
         assertFalse(doublyList.isZigZag());
     }
+
+    @Test
+    public void testPellNumber(){
+        //0 1 2 5 12 29 70 169
+        list = LinkedList.pellNumber(10, 30);
+        assertEquals("12 29", list.toString());
+        list = LinkedList.pellNumber(2, 55);
+        assertEquals("2 5 12 29", list.toString());
+        list = LinkedList.pellNumber(5, 7);
+        assertEquals("5", list.toString());
+        list = LinkedList.pellNumber(20, 24);
+        assertEquals("", list.toString());
+    }
+
 }

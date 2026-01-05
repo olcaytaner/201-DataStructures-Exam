@@ -71,6 +71,15 @@ public class QuickSort implements Sort{
      * may not use any additional data structure or array.
      */
     public void threePartitionArray(int[] A, int X){
-
     }
+
+    /**
+     * Given array A of N numbers write function by using the existing quick sort implementation
+     * quickSort, which now orders the items as minimum item, maximum item, second minimum item,
+     * second maximum item, etc. You may assume list length is even. Input list should not be modified and
+     * You may use up to two extra arrays. For instance:
+     * [1, 8, 7, 3, 4, 5, 9, 2] -> [1, 9, 2, 8, 3, 7, 4, 5]
+     */
+    public int[] minMaxRepeat(int[] A) {return new int[0];}
+
 }

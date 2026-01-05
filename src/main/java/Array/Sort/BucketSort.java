@@ -78,4 +78,12 @@ public class BucketSort implements Sort{
     public int[] topTwoFrequent(int[] A){
         return null;
     }
+
+    /**
+     *  Given an array A of N integers, write a function in BucketSort class which returns the second least frequent element in the
+     *  given array A, which is already sorted. Your function must run in O(N) time.
+     *  You can not modify the input array A. You may use up to 1 external array.
+     */
+    public int secondLeastFrequent(int[] A) { return 0; }
+
 }
