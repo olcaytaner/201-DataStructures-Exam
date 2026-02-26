@@ -1,0 +1,8 @@
+RULES:
+1- Write only one function per question in Java.
+2- Do not check the input, assume that the input is correct.
+3- Unless noted:
+   (i) the input data structure is not empty,
+   (ii) time complexity of the algorithm does not matter,
+   (iii) you can not use extra data structures,
+   (iv) you can use any function given in the data structure.
