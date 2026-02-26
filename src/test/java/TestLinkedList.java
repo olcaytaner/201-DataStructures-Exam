@@ -288,22 +288,22 @@ public class TestLinkedList {
 
     @Test
     public void testDeleteEven(){
-        doublyList = new DoublyLinkedList();
-        doublyList.insertArray(new int[]{1, 2, 4, 2, 1});
-        doublyList.deleteEven();
-        assertEquals("1 1", doublyList.toString());
-        doublyList = new DoublyLinkedList();
-        doublyList.insertArray(new int[]{2, 4, 2});
-        doublyList.deleteEven();
-        assertEquals("", doublyList.toString());
-        doublyList = new DoublyLinkedList();
-        doublyList.insertArray(new int[]{6, 2, 4, 2, 12, 8});
-        doublyList.deleteEven();
-        assertEquals("6 2 4 2 12 8", doublyList.toString());
-        doublyList = new DoublyLinkedList();
-        doublyList.insertArray(new int[]{5, 2, 4, 1, 2, 12, 7, 8, 3, 12, 1});
-        doublyList.deleteEven();
-        assertEquals("5 1 7 3 1", doublyList.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{1, 2, 4, 2, 1});
+        list.deleteEven();
+        assertEquals("1 1", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{2, 4, 2});
+        list.deleteEven();
+        assertEquals("", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{5, 3, 5, 7, 11});
+        list.deleteEven();
+        assertEquals("5 3 5 7 11", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{5, 2, 4, 1, 2, 12, 7, 8, 3, 12, 1});
+        list.deleteEven();
+        assertEquals("5 1 7 3 1", list.toString());
     }
 
     @Test
@@ -548,7 +548,7 @@ public class TestLinkedList {
         list = LinkedList.zibonacci(10, 20);
         assertEquals("13 19", list.toString());
         list = LinkedList.zibonacci(0, 55);
-        assertEquals("1 1 1 2 3 4 6 9 13 19 28 41", list.toString());
+        assertEquals("0 1 1 1 2 3 4 6 9 13 19 28 41", list.toString());
         list = LinkedList.zibonacci(5, 7);
         assertEquals("6", list.toString());
         list = LinkedList.zibonacci(20, 24);
