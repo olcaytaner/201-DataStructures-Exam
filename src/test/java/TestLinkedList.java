@@ -73,7 +73,7 @@ public class TestLinkedList {
         list = new LinkedList();
         list.insertArray(new int[]{18, 2, 3, 5, 7, 11, 13, 14});
         list.deletePrimes();
-        assertEquals("18, 14", list.toString());
+        assertEquals("18 14", list.toString());
     }
 
     @Test
