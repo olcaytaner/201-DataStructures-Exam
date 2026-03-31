@@ -145,4 +145,18 @@ public class TestListStack {
         assertEquals("6 7 8 4 5", stack.toString());
     }
 
+    @Test
+    public void testRemoveEvenIndexed(){
+        stack = new Stack();
+        stack.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12});
+        stack.removeEvenIndexed();
+        assertEquals("2 4 6 8 10 12", stack.toString());
+        stack.removeEvenIndexed();
+        assertEquals("4 8 12", stack.toString());
+        stack.removeEvenIndexed();
+        assertEquals("4 12", stack.toString());
+        stack.removeEvenIndexed();
+        assertEquals("12", stack.toString());
+    }
+
 }

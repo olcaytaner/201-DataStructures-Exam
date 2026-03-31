@@ -634,4 +634,39 @@ public class TestLinkedList {
         assertEquals("", list.toString());
     }
 
+    @Test
+    public void testAddAfterEveryOtherNode() {
+        list = new LinkedList();
+        list.insertArray(new int[]{1, 2, 4, 5});
+        list.addAfterEveryOtherNode(new Node(7));
+        assertEquals("1 7 2 4 7 5", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{1});
+        list.addAfterEveryOtherNode(new Node(8));
+        assertEquals("1 8", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{8, 3, 2, 6, 7});
+        list.addAfterEveryOtherNode(new Node(3));
+        assertEquals("8 3 3 2 3 6 7 3", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{8, 3, 2, 6, 10, 12});
+        list.addAfterEveryOtherNode(new Node(2));
+        assertEquals("8 2 3 2 2 6 10 2 12", list.toString());
+    }
+
+    @Test
+    public void testCompressConsecutiveReverse(){
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{2, 2, 2, 3, 3, 1});
+        doublyList.compressConsecutiveReverse();
+        assertEquals("1 3 3 2 2", doublyList.toString());
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{1, 2, 3, 4, 4, 2});
+        doublyList.compressConsecutiveReverse();
+        assertEquals("2 4 4 3 2 1", doublyList.toString());
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{2, 4, 4, 3, 2, 1});
+        doublyList.compressConsecutiveReverse();
+        assertEquals("1 2 3 4 4 2", doublyList.toString());
+    }
 }

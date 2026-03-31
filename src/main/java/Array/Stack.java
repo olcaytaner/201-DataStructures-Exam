@@ -146,4 +146,15 @@ public class Stack {
     public void removeBetweenMinMax(){
     }
 
+    /** Write the method in Array implementation of Stack
+     * int getMinimum()
+     * that returns the minimum element of a stack. You are only allowed to use pop, push, isEmpty functions. The stack must
+     * contain the same elements in the same order after the execution of this
+     * function. You may use an external stack. You may assume stack is not empty and there are at most 100 items in the stack.
+     *
+     * [2, 3, 1, 5, 4]  (4 is top) -$>$ [2, 3, 5, 4]
+     */
+    public int getMinimum(){
+        return 0;
+    }
 }

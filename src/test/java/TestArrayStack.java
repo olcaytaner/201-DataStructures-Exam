@@ -153,4 +153,24 @@ public class TestArrayStack {
         assertEquals("5 3 7 1 10", stack.toString());
     }
 
+    @Test
+    public void testGetMinimum(){
+        stack = new Stack(100);
+        stack.insertArray(new int[]{1, 2, 3, 4, 5});
+        int value = stack.getMinimum();
+        assertEquals(1, value);
+        assertEquals("2 3 4 5", stack.toString());
+        stack = new Stack(100);
+        stack.insertArray(new int[]{2, 3, 1, 4, 5});
+        value = stack.getMinimum();
+        assertEquals(1, value);
+        assertEquals("2 3 4 5", stack.toString());
+        stack = new Stack(100);
+        stack.insertArray(new int[]{1, 2, 3, 4, 5, 0});
+        value = stack.getMinimum();
+        assertEquals(0, value);
+        assertEquals("1 2 3 4 5", stack.toString());
+
+    }
+
 }

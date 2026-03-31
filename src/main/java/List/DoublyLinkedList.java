@@ -119,4 +119,17 @@ public class DoublyLinkedList extends LinkedList{
     public boolean isZigZag(){
         return false;
     }
+
+    /**
+     * Write the method void compressConsecutiveReverse() which compresses consecutive items with the same value into two
+     * consecutive values starting from end of the list and going backwards. If a value appears only once consecutively, you
+     * only keep the single value without compressing. You are not allowed to use any doubly linked list
+     * methods. You are allowed to use attributes, constructors, getters and
+     * setters. Write the method in the DoublyLinkedList class. For instance,
+     *
+     * 1 3 3 2 2 2 ->  2 2 3 3 1
+     * 2 4 4 3 2 1 -> 1 2 3 4 4 2
+     */
+    public void compressConsecutiveReverse() {
+    }
 }

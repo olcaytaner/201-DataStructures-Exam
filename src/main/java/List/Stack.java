@@ -138,4 +138,28 @@ public class Stack {
      */
     public void rotateStack(int k){
     }
+
+    /**
+     * Write the method void removeEvenIndexed() which removes only the even indexed (2, 4, . . .)
+     * elements from the stack. The first element has index 1 (Top of the stack).
+     * You are only allowed to use pop, push, isEmpty functions. You should use a single external
+     * stack. You should use linked list implementation of stack.
+    */
+    public void removeEvenIndexed() {
+        Stack temp = new Stack();
+        int index = 1;
+
+        while (!this.isEmpty()) {
+            int value = this.pop().getData();
+
+            if (index % 2 == 1) {
+                temp.push(new Node(value));
+            }
+            index++;
+        }
+
+        while (!temp.isEmpty()) {
+            this.push(temp.pop());
+        }
+    }
 }

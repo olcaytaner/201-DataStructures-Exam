@@ -322,4 +322,14 @@ public class LinkedList {
      */
     public static LinkedList pellNumber(int A, int B) { return new LinkedList(); }
 
+    /**
+     * Write the method void addAfterEveryOtherNode(Node newNode)
+     * which adds newNode after every other node (skip one) in the singly
+     * linked list. You are allowed to use attributes, constructors, getters and
+     * setters. You may assume linked list has at least one element. Write the method in the LinkedList class.
+     *
+     * 1 2 3 4 5 -> 1 X 2 3 X 4 5 X
+     */
+    public void addAfterEveryOtherNode(Node newNode) {
+    }
 }
