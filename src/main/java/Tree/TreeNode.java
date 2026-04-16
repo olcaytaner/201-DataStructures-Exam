@@ -184,4 +184,27 @@ public class TreeNode {
      */
     public int quadraticSummation() { return 0;}
 
+    /** Write a recursive method in TreeNode class which returns the number of nodes which value is greater than its
+     children's absolute difference (left and right children must exist).
+     **/
+    public int greaterThanAbsoluteDifference() {
+        int count = 0;
+
+        if (left != null && right != null) {
+            int diff = Math.abs(left.data - right.data);
+            if (data > diff) {
+                count = 1;
+            }
+        }
+
+        if (left != null) {
+            count += left.greaterThanAbsoluteDifference();
+        }
+
+        if (right != null) {
+            count += right.greaterThanAbsoluteDifference();
+        }
+
+        return count;
+    }
 }

@@ -450,4 +450,34 @@ public class TestTree {
         assertEquals(14, tree2.getRoot().quadraticSummation());
     }
 
+    @Test
+    public void testCoverAllFibonacci() {
+        Tree tree1 = new Tree();
+        tree1.insertArray(new int[]{1, 2, 3, 8, 13, 5});
+        assertTrue(tree1.coverAllFibonacci(15));
+
+        Tree tree2 = new Tree();
+        tree2.insertArray(new int[]{1, 2, 3, 8, 13});
+        assertFalse(tree2.coverAllFibonacci(15));
+
+        Tree tree3 = new Tree();
+        tree3.insertArray(new int[]{1, 2, 5, 8, 3});
+        assertTrue(tree3.coverAllFibonacci(8));
+    }
+
+    @Test
+    public void testGreaterThanAbsoluteDifference() {
+        Tree tree1 = new Tree();
+        tree1.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        assertEquals(0, tree1.getRoot().greaterThanAbsoluteDifference());
+
+        Tree tree2 = new Tree();
+        tree2.insertArray(new int[]{4, 2, 1, 3, 6, 5, 7});
+        assertEquals(1, tree2.getRoot().greaterThanAbsoluteDifference());
+
+        Tree tree3 = new Tree();
+        tree3.insertArray(new int[]{5, 2, 6, 1, 8, 4, 3});
+        assertEquals(1, tree3.getRoot().greaterThanAbsoluteDifference());
+    }
+
 }

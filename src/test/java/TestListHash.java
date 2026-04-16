@@ -139,4 +139,20 @@ public class TestListHash {
         assertTrue(Hash.sumOfThreeK(new int[]{1, 2, 3, 4}, 9));
     }
 
+    @Test
+    public void testMaxMapThree() {
+        hash1 = new Hash(17);
+        hash1.insertArray(new int[]{1, 2, 2, 1, 2, 3, 1, 2, 1, 2});
+        assertFalse(hash1.maxMapThree());
+        hash1 = new Hash(17);
+        hash1.insertArray(new int[]{1, 2, 3, 4, 5, 6, 8});
+        assertTrue(hash1.maxMapThree());
+        hash1 = new Hash(7);
+        hash1.insertArray(new int[]{1, 2, 2, 1, 2, 3, 1, 2, 1, 2});
+        assertFalse(hash1.maxMapThree());
+        hash1 = new Hash(5);
+        hash1.insertArray(new int[]{1, 3, 5, 7});
+        assertTrue(hash1.maxMapThree());
+    }
+
 }

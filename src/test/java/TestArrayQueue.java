@@ -209,4 +209,17 @@ public class TestArrayQueue {
         assertEquals("1 2 7 9 2 6 8 0", main2.toString());
     }
 
+    @Test
+    public void testZigZagSingleQueue() {
+        Queue q1 = new Queue(10);
+        q1.insertArray(new int[]{2, 3, 4, 5, 7, 8, 1});
+        Queue main = Queue.zigZagSingleQueue(q1);
+        assertEquals("2 1 3 8 4 7 5", main.toString());
+
+        Queue q2 = new Queue(10);
+        q2.insertArray(new int[]{2, 3, 4, 5, 6, 7, 8, 1});
+        Queue main2 = Queue.zigZagSingleQueue(q2);
+        assertEquals("2 1 3 8 4 7 5 6", main2.toString());
+    }
+
 }

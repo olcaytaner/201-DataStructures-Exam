@@ -150,4 +150,36 @@ public class Queue {
         return null;
     }
 
+    /** Write static method in Array-based Queue implementation which should add one element from the front of input queue, then one
+     element from back in reverse order, another element from second element from front, etc. without using the queue’s enqueue(),
+     dequeue(), or peek() methods. You must directly manipulate the underlying array of the queue to achieve this effect. The elements
+     from queues should be recreated (not copied from the queues). Below is an example:
+
+     Queue q: 2 3 4 5 7 8 1
+
+     Resulting Queue: 2 1 3 8 4 7 5
+     **/
+     public static Queue zigZagSingleQueue(Queue q) {
+        Queue result = new Queue(q.last-q.first+1);
+        int size = q.last - q.first ;
+        int left = 0;
+        int right = size-1;
+
+        boolean takeFromFront = true;
+        while (left <= right) {
+            if (takeFromFront) {
+                int index = (q.first + left) % size;
+                result.array[result.last++] = new Element(q.array[index].getData());
+                left++;
+            } else {
+                int index = (q.first + right) % size;
+                result.array[result.last++] = new Element(q.array[index].getData());
+                right--;
+            }
+            takeFromFront = !takeFromFront;
+        }
+
+        return result;
+    }
+
 }

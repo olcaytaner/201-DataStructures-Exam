@@ -159,4 +159,24 @@ public class Hash {
     public static boolean sumOfThreeK(int[] array, int K){
         return false;
     }
+
+    /** Write the method in Linked List Hash implementation that returns true if the hash table contains three nodes at maximum per
+    linked list in separate chaining, otherwise it returns false.
+    **/
+    public boolean maxMapThree() {
+        for (int i = 0; i < table.length; i++) {
+            Node current = table[i].getHead();
+            int count = 0;
+
+            while (current != null) {
+                count++;
+                if (count > 3) {
+                    return false;
+                }
+                current = current.next;
+            }
+        }
+        return true;
+    }
+
 }
