@@ -144,39 +144,5 @@ public class Tree {
     /** Write a non-recursive method in Tree class that checks whether tree values cover all Fibonacci numbers from 1 to a given
     number n. You may assume tree has at least 1 node.
      **/
-    public boolean coverAllFibonacci(int n) {
-        int f1 = 1;
-        int f2 = 2;
-        int target = 1;
-
-        while (target <= n) {
-            TreeNode curr = root;
-            boolean found = false;
-
-            while (curr != null) {
-                if (curr.data == target) {
-                    found = true;
-                    break;
-                } else if (target < curr.data) {
-                    curr = curr.left;
-                } else {
-                    curr = curr.right;
-                }
-            }
-
-            if (!found)
-                return false;
-
-            if (target == 1) {
-                target = 2;
-            } else {
-                int next = f1 + f2;
-                f1 = f2;
-                f2 = next;
-                target = f2;
-            }
-        }
-
-        return true;
-    }
+    public boolean coverAllFibonacci(int n) { return true; }
 }

@@ -159,27 +159,6 @@ public class Queue {
 
      Resulting Queue: 2 1 3 8 4 7 5
      **/
-     public static Queue zigZagSingleQueue(Queue q) {
-        Queue result = new Queue(q.last-q.first+1);
-        int size = q.last - q.first ;
-        int left = 0;
-        int right = size-1;
-
-        boolean takeFromFront = true;
-        while (left <= right) {
-            if (takeFromFront) {
-                int index = (q.first + left) % size;
-                result.array[result.last++] = new Element(q.array[index].getData());
-                left++;
-            } else {
-                int index = (q.first + right) % size;
-                result.array[result.last++] = new Element(q.array[index].getData());
-                right--;
-            }
-            takeFromFront = !takeFromFront;
-        }
-
-        return result;
-    }
+     public static Queue zigZagSingleQueue(Queue q) { return null;}
 
 }
