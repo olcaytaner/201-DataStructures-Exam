@@ -208,4 +208,11 @@ public class DisjointSet {
      methods.
      */
     public int childrenParentEqual() { return 0; }
+
+    /**
+     Write the method in {\bf DisjointSet} class which returns the number of sets that have even height (2, 4, 6, etc).
+     The height of an element is calculated by the number of nodes visited when we traverse the tree
+     starting from that set and continue through the parent links until the top. Do not use any class or external methods.
+    */
+    public int evenHeightSets() { return 0; }
 }

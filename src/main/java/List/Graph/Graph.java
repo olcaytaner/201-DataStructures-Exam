@@ -239,4 +239,11 @@ public class Graph extends AbstractGraph {
      * You are not allowed to use extra data structures.
      */
     public int oddEdgeGraph() { return 0; }
+
+    /** Write a new constructor for Graph class for linked list implementation which constructs a new
+     * graph by taking the intersection of two graphs A and B, where an edge is included in the constructed
+     * graph when such edge appears in at both A and B. You may assume that both graphs have the same size
+     * and same set of vertices. Do not use any class or external methods.
+     */
+    public Graph(Graph A, Graph B)  {}
 }

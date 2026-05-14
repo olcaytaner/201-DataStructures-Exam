@@ -145,28 +145,23 @@ public class TestListGraph {
     @Test
     public void testMerge(){
         Graph graph = new Graph(10,
-                new int[][]{{2, 4}, {6, 3}, {3, 6}, {1, 5}});
+                new int[][]{{2, 4}, {3, 6}, {1, 5}});
         Graph graph2 = new Graph(10,
                 new int[][]{{2, 4, 2}, {3, 6, 2}, {1, 7, 2}});
         Graph expected = new Graph(10,
-                new int[][]{{2, 4, 3}, {3, 6, 3}, {1, 7, 2}});
-        expected.addEdge(2, 4, 3);
-        expected.addEdge(3, 6, 3);
-        expected.addEdge(1, 7, 2);
-        graph.addEdge(1, 5, 1);
-        graph.addEdge(6, 3, 1);
+                new int[][]{{2, 4, 3}, {3, 6, 3}, {1, 7, 2}, {1, 5, 1}});
         Graph actual = graph.merge(graph2, 0);
         assertEquals(expected, actual);
     }
 
     @Test
     public void testOutgoingListSame() {
-        Array.Graph.Graph graph = new Array.Graph.Graph(6,
+        Graph graph = new Graph(6,
                 new int[][]{{0, 1}, {0, 3}, {0, 4},
                         {2, 1}, {2, 3}, {2, 4},
                         {4, 0}, {5, 1}});
         assertTrue(graph.outgoingListSame());
-        graph = new Array.Graph.Graph(5,
+        graph = new Graph(5,
                 new int[][]{{0, 1}, {1, 2}, {2, 3},
                         {3, 4}, {4, 0}});
         assertFalse(graph.outgoingListSame());
@@ -282,4 +277,20 @@ public class TestListGraph {
         assertEquals(2, graph2.oddEdgeGraph());
     }
 
+    @Test
+    public void testGraphConstructorIntersection(){
+        Graph graphA = new Graph(4,
+                new int[][]{{0, 1}, {0, 2}, {1, 0}, {2, 0}});
+        Graph graphB = new Graph(4,
+                new int[][]{{0, 1}, {1, 2}, {1, 1}, {2, 0}});
+        Graph result = new Graph(graphA, graphB);
+        assertEquals("0 1 1\n2 0 1\n", result.toString());
+
+        graphA = new Graph(10,
+                new int[][]{{0, 1}, {0, 2}, {1, 0}, {2, 0}});
+        graphB = new Graph(10,
+                new int[][]{{0, 1}, {0, 3}, {1, 0}, {2, 0}});
+        result = new Graph(graphA, graphB);
+        assertEquals("0 1 1\n1 0 1\n2 0 1\n", result.toString());
+    }
 }

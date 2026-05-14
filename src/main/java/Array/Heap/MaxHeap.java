@@ -78,4 +78,11 @@ public class MaxHeap extends Heap{
         return 0;
     }
 
+    /**
+     * Write the method in  {\bf MaxHeap} class that returns the summation of value change range for each node assuming that
+     * heap properties will not be violated. For instance, change range of a node with value 7 which has
+     * parent with value 10, and values 5 and 3 as its children is 10-5=5. For root node, take its value as
+     * the maximum. For leaf nodes, take its value as the minimum.  Do not use any class or external methods.
+     */
+    public int sumChangeRange() { return 0; }
 }

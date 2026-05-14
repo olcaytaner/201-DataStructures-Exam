@@ -180,4 +180,9 @@ public class Graph extends AbstractGraph {
      */
     public boolean isTwoGraph() { return false; }
 
+    /** Given adjacency matrix representation of a directed graph, write the method that returns true if
+     * there are two nodes whose incoming node lists are the same, false otherwise. Assume that the outgoing node
+     * lists are sorted. Your method should run in O(V^3) cubic time. Do not use any class or external methods.
+    */
+    public boolean incomingListSame() { return true; }
 }

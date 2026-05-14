@@ -129,7 +129,7 @@ public class TestDisjointSet {
         Assert.assertEquals(3, disjointSet.numberOfTriplets());
         disjointSet.union(1, 4);
         disjointSet.union(1, 7);
-        Assert.assertEquals(1, disjointSet.numberOfTriplets());
+        Assert.assertEquals(0, disjointSet.numberOfTriplets());
     }
 
     @Test
@@ -244,6 +244,27 @@ public class TestDisjointSet {
         disjointSet.union(5, 6);
         disjointSet.union(5, 7);
         Assert.assertEquals(2, disjointSet.childrenParentEqual());
+    }
+
+    @Test
+    public void testEvenHeightSets() {
+        DisjointSet disjointSet = new DisjointSet(10);
+        disjointSet.union(1, 2);
+        disjointSet.union(2, 3);
+        disjointSet.union(5, 6);
+        disjointSet.union(5, 7);
+        Assert.assertEquals(4, disjointSet.evenHeightSets());
+
+        disjointSet = new DisjointSet(4);
+        disjointSet.union(0, 1);
+        disjointSet.union(2, 3);
+        Assert.assertEquals(2, disjointSet.evenHeightSets());
+
+        disjointSet = new DisjointSet(6);
+        disjointSet.union(1, 2);
+        disjointSet.union(3, 4);
+        disjointSet.union(3, 5);
+        Assert.assertEquals(3, disjointSet.evenHeightSets());
     }
 
 }

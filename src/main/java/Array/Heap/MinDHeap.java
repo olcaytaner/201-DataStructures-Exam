@@ -73,4 +73,9 @@ public class MinDHeap extends DHeap {
     public int sumOfMaxChange(int min, int max){
         return 0;
     }
+
+    /** Write the method in {\bf MinDHeap} class that finds the largest item. You should not make more
+     * than N(1 - 1/d) comparisons. Do not use any class or external methods.
+     */
+    public int largest(){ return 0; }
 }

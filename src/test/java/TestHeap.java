@@ -228,7 +228,29 @@ public class TestHeap {
         heap = new MinHeap(10);
         heap.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8});
         int[] items3 = new int[]{1, 3, 5};
-        Assert.assertEquals(1.33333, heap.averagePercolateUp(items3), 0.0001);
+        Assert.assertEquals(1, heap.averagePercolateUp(items3), 0.0001);
+    }
+
+    @Test
+    public void testLargest() {
+        MinDHeap heap = new MinDHeap(10,3);
+        heap.insertArray(new int[]{1, 3, 5, 7, 8, 10, 12});
+        Assert.assertEquals(12, heap.largest());
+
+        heap = new MinDHeap(10,4);
+        heap.insertArray(new int[]{1, 32, 5, 7, 8, 10, 12});
+        Assert.assertEquals(32, heap.largest());
+    }
+
+    @Test
+    public void testAverageChangeRange() {
+        MaxHeap heap = new MaxHeap(10);
+        heap.insertArray(new int[]{1, 3, 5, 7, 8, 10, 12});
+        Assert.assertEquals(30, heap.sumChangeRange());
+
+        heap = new MaxHeap(10);
+        heap.insertArray(new int[]{1, 12, 15, 17, 8, 5, 2});
+        Assert.assertEquals(61, heap.sumChangeRange());
     }
 
 }
