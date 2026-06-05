@@ -480,4 +480,20 @@ public class TestTree {
         assertEquals(1, tree3.getRoot().greaterThanAbsoluteDifference());
     }
 
+    @Test
+    public void testAverageChildrenGreaterHeight() {
+        Tree tree1 = new Tree();
+        tree1.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        assertEquals(0, tree1.getRoot().averageChildrenGreaterHeight(0));
+
+        Tree tree2 = new Tree();
+        tree2.insertArray(new int[]{5, 4, 6});
+        assertEquals(1, tree2.getRoot().averageChildrenGreaterHeight(0));
+
+        Tree tree3 = new Tree();
+        tree3.insertArray(new int[]{10, 5, 15, 3, 7, 12, 20});
+        assertEquals(3, tree3.getRoot().averageChildrenGreaterHeight(0));
+    }
+
+
 }

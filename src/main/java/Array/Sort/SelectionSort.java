@@ -1,6 +1,9 @@
 package Array.Sort;
 
+import List.DoublyNode;
+import List.Node;
 import List.LinkedList;
+import List.DoublyLinkedList;
 
 public class SelectionSort implements Sort{
     @Override
@@ -37,4 +40,9 @@ public class SelectionSort implements Sort{
     public int[] sortNew(int[] A, int[] B){
         return null;
     }
+
+    /** Write a function in Selection Sort class that sorts a doubly linked list using selection sort.
+     * You are not allowed to use extra data structures.
+     */
+    public void selectionSortDouble(DoublyLinkedList A) {}
 }

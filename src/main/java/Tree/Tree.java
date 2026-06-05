@@ -1,5 +1,7 @@
 package Tree;
 
+import List.Node;
+
 public class Tree {
 
     protected TreeNode root;

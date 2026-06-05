@@ -177,4 +177,19 @@ public class TestArrayGraph {
         assertFalse(graph.incomingListSame());
     }
 
+    @Test
+    public void testCountTriangles() {
+        Graph graph = new Graph(3);
+        assertEquals(0, graph.countTriangles());
+
+        graph = new Graph(3,
+                new int[][]{{0, 1}, {0, 2}, {1, 0},
+                        {1, 2}, {2, 0}, {2, 1}});
+        assertEquals(1, graph.countTriangles());
+
+        graph = new Graph(4,
+                new int[][]{{0, 1}, {0, 2}, {1, 0},
+                        {1, 2}, {2, 0}, {2, 1}, {2, 3}, {3, 2}});
+        assertEquals(1, graph.countTriangles());
+    }
 }

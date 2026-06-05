@@ -185,4 +185,9 @@ public class Graph extends AbstractGraph {
      * lists are sorted. Your method should run in O(V^3) cubic time. Do not use any class or external methods.
     */
     public boolean incomingListSame() { return true; }
+
+    /** Write a method to count number of triangles in a graph with adjacency matrix
+     * representation. You are not allowed to use extra data structures.
+     */
+    public int countTriangles() { return 0; }
 }

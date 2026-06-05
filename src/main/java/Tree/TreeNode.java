@@ -188,4 +188,10 @@ public class TreeNode {
      children's absolute difference (left and right children must exist).
      **/
     public int greaterThanAbsoluteDifference() { return 0;}
+
+    /** Write a recursive method in TreeNode class which returns the number of nodes for which
+     * the average of its children value (left and right children must exist) is greater than
+     the node's depth. You may only use up to 2 stacks. Root depth is assumed to be 0.
+     */
+    public int averageChildrenGreaterHeight(int depth) { return 0;}
 }

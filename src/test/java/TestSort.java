@@ -1,4 +1,5 @@
 import Array.Sort.*;
+import List.DoublyLinkedList;
 import List.LinkedList;
 import org.junit.Test;
 import java.util.Arrays;
@@ -299,14 +300,14 @@ public class TestSort {
         SelectionSort select = new SelectionSort();
         select.selectionSort(list);
         LinkedList expected = new LinkedList();
-        expected.insertArray(new int[]{1, 2, 3, 4, 6, 5, 7});
+        expected.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
         assertEquals(expected.toString(), list.toString());
 
         list = new LinkedList();
         list.insertArray(new int[]{7, 6, 5, 4, 3, 2, 1});
         select.selectionSort(list);
         expected = new LinkedList();
-        expected.insertArray(new int[]{1, 2, 3, 4, 6, 5, 7});
+        expected.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
         assertEquals(expected.toString(), list.toString());
     }
 
@@ -355,4 +356,34 @@ public class TestSort {
         assertArrayEquals(new int[]{1, 8, 2, 7, 3, 6, 4, 5}, quickSort.minMaxRepeat(B));
     }
 
+    @Test
+    public void testSelectionSortDouble(){
+        DoublyLinkedList list = new DoublyLinkedList();
+        list.insertArray(new int[]{4, 6, 5, 7, 1, 2, 3});
+        SelectionSort select = new SelectionSort();
+        select.selectionSortDouble(list);
+        DoublyLinkedList expected = new DoublyLinkedList();
+        expected.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        assertEquals(expected.toString(), list.toString());
+
+        list = new DoublyLinkedList();
+        list.insertArray(new int[]{7, 6, 5, 4, 3, 2, 1});
+        select.selectionSortDouble(list);
+        expected = new DoublyLinkedList();
+        expected.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        assertEquals(expected.toString(), list.toString());
+    }
+
+    @Test
+    public void testMaxAlternatingLength(){
+        int[] A = {4, -2, 7, -1, 6, -3};
+        InsertionSort insert = new InsertionSort();
+        assertEquals(6, insert.maxAlternatingLength(A));
+
+        int[] B = {1, -2, 0, -3, 4, -5};
+        assertEquals(3, insert.maxAlternatingLength(B));
+
+        int[] C = {5, 6, -1, 2, -3, 4, 7};
+        assertEquals(5, insert.maxAlternatingLength(C));
+    }
 }

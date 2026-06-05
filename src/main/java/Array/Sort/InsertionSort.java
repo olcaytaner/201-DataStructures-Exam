@@ -42,4 +42,12 @@ public class InsertionSort implements Sort{
     public void sort2(int[] A, int[] B){
     }
 
+    /**
+     Given an array of N numbers, write function in Insertion Sort class that determines the maximum length of the alternating sublist in the array, where an
+     alternating sublist is made up of one positive item and then a negative item, then positive, etc.
+     0 cannot be part of a positive/negative alternating sublist. A sublist starts from index i and
+     continues with indexes i+1, i+2, ..., i+k. Your function should run in O(N) time.
+     You are not allowed to use extra data structures.
+     */
+    public int maxAlternatingLength(int[] A) { return 0;}
 }
