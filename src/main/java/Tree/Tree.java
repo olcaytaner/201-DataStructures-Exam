@@ -18,6 +18,14 @@ public class Tree {
         this.root = root;
     }
 
+    @Override
+    public String toString() {
+        if (root == null) {
+            return "";
+        }
+        return root.toString();
+    }
+
     protected void insertChild(TreeNode parent, TreeNode child){
         if (parent == null) {
             root = child;

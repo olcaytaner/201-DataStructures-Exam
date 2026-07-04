@@ -14,6 +14,27 @@ public class TreeNode {
         this.right = null;
     }
 
+    @Override
+    public String toString() {
+        return this.generateString("", true);
+    }
+
+    private String generateString(String prefix, boolean isLeft) {
+        StringBuilder sb = new StringBuilder();
+
+        if (right != null) {
+            sb.append(right.generateString(prefix + (isLeft ? "│   " : "    "), false));
+        }
+
+        sb.append(prefix).append(isLeft ? "└── " : "┌── ").append(this.data).append("\n");
+
+        if (left != null) {
+            sb.append(left.generateString(prefix + (isLeft ? "    " : "│   "), true));
+        }
+
+        return sb.toString();
+    }
+
     public TreeNode getLeft(){
         return left;
     }
