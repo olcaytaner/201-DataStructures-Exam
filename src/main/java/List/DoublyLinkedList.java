@@ -132,4 +132,16 @@ public class DoublyLinkedList extends LinkedList{
      */
     public void compressConsecutiveReverse() {
     }
+
+    /** Given two sorted doubly linked lists L1 and L2, write static method
+     * DoublyLinkedList intersection(DoublyLinkedList l1, DoublyLinkedList l2)
+     * in DoublyLinkedList Class to compute intersection of L1 and L2 by without avoiding duplications. You are not allowed to use any linked list methods. You are only
+     * allowed to use attributes, constructors, getters and setters.
+     * Contents of the first list: 1 2 2 2 4 5
+     * Contents of the second list: 2 2 3 4 4 5
+     * Contents of the results: 2 2 4 5
+     */
+    public static DoublyLinkedList intersection(DoublyLinkedList l1, DoublyLinkedList l2) {
+        return new DoublyLinkedList();
+    }
 }

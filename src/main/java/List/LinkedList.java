@@ -332,4 +332,14 @@ public class LinkedList {
      */
     public void addAfterEveryOtherNode(Node newNode) {
     }
+
+    /** Write the method
+     * boolean isZigZagSingleLinked()
+     * which returns True if linked list is decreasing first and then increasing after some item. This zig zag pattern should appear exactly
+     * one time. You may assume all values are distinct. You may assume list has at least 3 values. You are not allowed to use any linked list
+     * methods, just attributes, constructors, getters and setters. Write the method in the LinkedList class.
+     * 10 7 4 6 9 -> True
+     * 10 7 9 6 -> False
+     */
+    public boolean isZigZagSingleLinked() { return true; }
 }

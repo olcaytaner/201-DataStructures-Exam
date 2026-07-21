@@ -170,7 +170,28 @@ public class TestArrayStack {
         value = stack.getMinimum();
         assertEquals(0, value);
         assertEquals("1 2 3 4 5", stack.toString());
-
     }
 
+    @Test
+    public void testInsertAfterSmallest(){
+        stack = new Stack(100);
+        stack.insertArray(new int[]{8, 3, 6, 10});
+        stack.insertAfterSmallest(99);
+        assertEquals("8 3 99 6 10", stack.toString());
+
+        stack = new Stack(100);
+        stack.insertArray(new int[]{9, 7, 2});
+        stack.insertAfterSmallest(50);
+        assertEquals("9 7 2 50", stack.toString());
+
+        stack = new Stack(100);
+        stack.insertArray(new int[]{4});
+        stack.insertAfterSmallest(2);
+        assertEquals("4 2", stack.toString());
+
+        stack = new Stack(100);
+        stack.insertArray(new int[]{5, -3, 7, 0});
+        stack.insertAfterSmallest(15);
+        assertEquals("5 -3 15 7 0", stack.toString());
+    }
 }

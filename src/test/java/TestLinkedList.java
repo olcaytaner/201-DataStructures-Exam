@@ -669,4 +669,43 @@ public class TestLinkedList {
         doublyList.compressConsecutiveReverse();
         assertEquals("1 2 3 4 4 2", doublyList.toString());
     }
+
+    @Test
+    public void testIsZigZagSingleLinked() {
+        list = new LinkedList();
+        list.insertArray(new int[]{10, 7, 4, 6, 9});
+        assertTrue(list.isZigZagSingleLinked());
+
+        list = new LinkedList();
+        list.insertArray(new int[]{10, 7, 9, 6});
+        assertFalse(list.isZigZagSingleLinked());
+
+        list = new LinkedList();
+        list.insertArray(new int[]{9, 6, 3, 5, 8});
+        assertTrue(list.isZigZagSingleLinked());
+    }
+
+    @Test
+    public void testDoubleIntersection(){
+        DoublyLinkedList l1 = new DoublyLinkedList();
+        DoublyLinkedList l2 = new DoublyLinkedList();
+        l1.insertArray(new int[]{1, 2, 2, 2, 4, 5});
+        l2.insertArray(new int[]{2, 2, 3, 4, 4, 5});
+        DoublyLinkedList result = DoublyLinkedList.intersection(l1,l2);
+        assertEquals("2 2 4 5", result.toString());
+
+        l1 = new DoublyLinkedList();
+        l2 = new DoublyLinkedList();
+        l1.insertArray(new int[]{1, 3, 5, 7, 11, 12});
+        l2.insertArray(new int[]{1, 2, 6, 7, 9, 11});
+        result = DoublyLinkedList.intersection(l1,l2);
+        assertEquals("1 7 11", result.toString());
+
+        l1 = new DoublyLinkedList();
+        l2 = new DoublyLinkedList();
+        l1.insertArray(new int[]{1, 2, 2, 2, 3});
+        l2.insertArray(new int[]{2, 3});
+        result = DoublyLinkedList.intersection(l1,l2);
+        assertEquals("2 3", result.toString());
+    }
 }

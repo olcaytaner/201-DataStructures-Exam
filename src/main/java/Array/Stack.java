@@ -157,4 +157,14 @@ public class Stack {
     public int getMinimum(){
         return 0;
     }
+
+    /*** Write the method
+     * void insertAfterSmallest(int s)
+     * that inserts a new integer $s$ after the smallest element of the stack.
+     * Write the function for array implementation. You may assume stack is not empty. You are not
+     * allowed to use any stack methods, just attributes, constructors,
+     * getters and setters.
+     */
+    public void insertAfterSmallest(int s) {
+    }
 }
