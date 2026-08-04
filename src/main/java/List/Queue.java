@@ -135,4 +135,12 @@ public class Queue {
     public int secondMaximum(){
         return 0;
     }
+
+    /**
+     * Write the method that checks if the original list implementation of queue contains the elements
+     * of the second queue consecutively in the reverse order. You may not use extra data structures.
+     * You are not allowed to use any queue methods, just attributes, constructors, getters and setters.
+     * You may assume queues are not empty.
+     */
+    public boolean subQueueReverse(Queue sub) { return true; }
 }

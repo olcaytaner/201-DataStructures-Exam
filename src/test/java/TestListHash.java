@@ -155,4 +155,19 @@ public class TestListHash {
         assertTrue(hash1.maxMapThree());
     }
 
+    @Test
+    public void testMaxMapFour() {
+        hash1 = new Hash(17);
+        hash1.insertArray(new int[]{1, 2, 2, 1, 2, 3, 1, 2, 1});
+        assertTrue(hash1.maxMapFour());
+        hash1 = new Hash(17);
+        hash1.insertArray(new int[]{1, 2, 3, 4, 5, 6, 8, 8, 8, 8, 8});
+        assertFalse(hash1.maxMapFour());
+        hash1 = new Hash(7);
+        hash1.insertArray(new int[]{1, 2, 2, 1, 2, 3, 1, 2});
+        assertTrue(hash1.maxMapFour());
+        hash1 = new Hash(5);
+        hash1.insertArray(new int[]{1, 1, 3, 5, 1, 7, 1, 1});
+        assertFalse(hash1.maxMapFour());
+    }
 }

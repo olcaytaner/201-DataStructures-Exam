@@ -121,4 +121,11 @@ public class TestArrayHash {
         assertTrue(Hash.equalPairMultiplication(new int[]{1, 3, 5, 30, 15}));
     }
 
+    @Test
+    public void testEqualTripletMultiplication() {
+        assertTrue(Hash.equalTripletMultiplication(new int[]{1, 2, 3, 4, 6}));
+        assertFalse(Hash.equalTripletMultiplication(new int[]{1, 2, 4, 8}));
+        assertTrue(Hash.equalTripletMultiplication(new int[]{2, 2, 3, 3}));
+        assertTrue(Hash.equalTripletMultiplication(new int[]{1, 3, 5, 30, 15}));
+    }
 }

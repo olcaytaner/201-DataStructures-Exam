@@ -3,7 +3,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class TestListQueue {
     Queue queue, queue2;
@@ -219,4 +219,23 @@ public class TestListQueue {
         assertEquals(18, q4.secondMaximum());
     }
 
+    @Test
+    public void testSubQueueReverse(){
+        queue.insertArray(new int[]{1, 2, 5, 4, 3, 7});
+        Queue q2 = new Queue();
+        q2.insertArray(new int[]{3, 4, 5});
+        assertTrue(queue.subQueueReverse(q2));
+
+        queue = new Queue();
+        queue.insertArray(new int[]{3, 2, 1, 7, 8});
+        q2 = new Queue();
+        q2.insertArray(new int[]{1, 2, 3});
+        assertTrue(queue.subQueueReverse(q2));
+
+        queue = new Queue();
+        queue.insertArray(new int[]{3, 2, 1, 7, 8});
+        q2 = new Queue();
+        q2.insertArray(new int[]{8,1});
+        assertFalse(queue.subQueueReverse(q2));
+    }
 }

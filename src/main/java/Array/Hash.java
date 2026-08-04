@@ -149,4 +149,10 @@ public class Hash {
     **/
     public static boolean equalPairMultiplication(int[] array) { return true; }
 
+    /**
+     * Write a static method in the Hash class (array implementation). This method should return true if
+     * any three distinct triplet multiplication in the array have the same value. Your method should run
+     * in O(N^3)(cubic) time. You may assume array has at least 4 items. You can use at most one external hash.
+     */
+    public static boolean equalTripletMultiplication(int[] array) { return true; }
 }

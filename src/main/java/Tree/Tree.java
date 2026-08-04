@@ -155,4 +155,21 @@ public class Tree {
     number n. You may assume tree has at least 1 node.
      **/
     public boolean coverAllFibonacci(int n) { return true; }
+
+    /**
+     * Write a non-recursive method in Tree class that computes the cubic sum of all keys in a binary search
+     * tree. You may use up to one external stack. You may assume tree is not empty.
+     * For instance, if keys are 2, 1, 4, the sum is 2^3 + 1^3 + 4^3 = 73.
+     */
+    public int cubicSumOfTree() { return  0; }
+
+    /**
+     * T1 and T2 are two very large binary search trees, with T1 much bigger than T2. Write recursive
+     * static method in Tree class to determine if T2 is a subtree of T1. A tree T2 is a subtree of T1
+     * if there exists a node n in T1 such that the subtree of n is identical to T2. That is, if you cut
+     * off the tree at node n, the two trees would be identical. You should use toString method provided
+     * in TreeNode Class, which returns string representation of Tree under TreeNode that can be used in
+     * determining whether two trees are identical.
+     */
+    public static boolean isSubtree(TreeNode T1, TreeNode T2) { return true; }
 }

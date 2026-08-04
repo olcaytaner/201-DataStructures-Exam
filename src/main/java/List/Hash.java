@@ -165,4 +165,8 @@ public class Hash {
     **/
     public boolean maxMapThree() { return true; }
 
+    /** Write the method in Linked List Hash implementation that returns true if the hash table contains
+     * four nodes at maximum per linked list in separate chaining, otherwise it returns false.
+     **/
+    public boolean maxMapFour() { return true; }
 }

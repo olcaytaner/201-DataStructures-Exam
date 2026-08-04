@@ -495,5 +495,34 @@ public class TestTree {
         assertEquals(3, tree3.getRoot().averageChildrenGreaterHeight(0));
     }
 
+    @Test
+    public void testCubicSumOfTree() {
+        Tree tree1 = new Tree();
+        tree1.insertArray(new int[]{2, 3, 10});
+        assertEquals(1035, tree1.cubicSumOfTree());
+        Tree tree2 = new Tree();
+        tree2.insertArray(new int[]{2, 3, 1});
+        assertEquals(36, tree2.cubicSumOfTree());
+    }
 
+    @Test
+    public void testIsSubtree() {
+        Tree tree1 = new Tree();
+        tree1.insertArray(new int[]{50, 30, 70, 20, 40, 60, 80});
+        Tree tree2 = new Tree();
+        tree2.insertArray(new int[]{30, 20, 40});
+        assertTrue(Tree.isSubtree(tree1.getRoot(), tree2.getRoot()));
+
+        tree1 = new Tree();
+        tree1.insertArray(new int[]{50, 30, 70, 20, 40, 60, 80});
+        tree2 = new Tree();
+        tree2.insertArray(new int[]{70, 60, 80});
+        assertTrue(Tree.isSubtree(tree1.getRoot(), tree2.getRoot()));
+
+        tree1 = new Tree();
+        tree1.insertArray(new int[]{50, 30, 70, 20, 40, 60, 80});
+        tree2 = new Tree();
+        tree2.insertArray(new int[]{30, 20});
+        assertFalse(Tree.isSubtree(tree1.getRoot(), tree2.getRoot()));
+    }
 }
