@@ -96,4 +96,10 @@ public class MaxDHeap extends DHeap {
      ifs elses is at most N).
      */
     public int secondMinimum() { return 0;}
+
+    /**
+     * Write the method in axDHeap class that finds the smallest item. You should not make more than
+     * N(1 - 1/d) comparisons. Do not use any class or external methods.
+     */
+    public int smallest() { return 0; }
 }

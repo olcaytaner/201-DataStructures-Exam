@@ -192,4 +192,21 @@ public class TestArrayGraph {
                         {1, 2}, {2, 0}, {2, 1}, {2, 3}, {3, 2}});
         assertEquals(1, graph.countTriangles());
     }
+
+    @Test
+    public void testEvenEdgeGraph(){
+        Graph graph = new Graph(4);
+        graph.addEdge(0, 1);
+        graph.addEdge(1, 2);
+        graph.addEdge(2, 3);
+        graph.addEdge(3, 0);
+        assertEquals(4, graph.evenEdgeGraph());
+
+        Graph graph2 = new Graph(6);
+        graph2.addEdge(0, 1);
+        graph2.addEdge(1, 3);
+        graph2.addEdge(5, 3);
+        graph2.addEdge(3, 0);
+        assertEquals(2, graph2.evenEdgeGraph());
+    }
 }

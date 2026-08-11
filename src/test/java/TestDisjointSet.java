@@ -267,4 +267,22 @@ public class TestDisjointSet {
         Assert.assertEquals(3, disjointSet.evenHeightSets());
     }
 
+    @Test
+    public void testSameHeightSetsDifferentRoot() {
+        DisjointSet disjointSet = new DisjointSet(6);
+        disjointSet.union(0, 1);
+        disjointSet.union(2, 3);
+        disjointSet.union(4, 5);
+        Assert.assertEquals(6, disjointSet.sameHeightSetsDifferentRoot());
+
+        disjointSet = new DisjointSet(3);
+        disjointSet.union(0, 1);
+        Assert.assertEquals(1, disjointSet.sameHeightSetsDifferentRoot());
+
+        disjointSet = new DisjointSet(5);
+        disjointSet.union(0, 1);
+        disjointSet.union(0, 2);
+        disjointSet.union(3, 4);
+        Assert.assertEquals(3, disjointSet.sameHeightSetsDifferentRoot());
+    }
 }

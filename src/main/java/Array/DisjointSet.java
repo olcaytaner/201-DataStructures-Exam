@@ -215,4 +215,12 @@ public class DisjointSet {
      starting from that set and continue through the parent links until the top. Do not use any class or external methods.
     */
     public int evenHeightSets() { return 0; }
+
+    /**
+     * Write the method in DisjointSet class which returns the number of set pairs that have the same
+     * height as well as being under different disjoint sets. The height of an element is calculated
+     * by the number of nodes visited when we traverse the tree starting from that set and continue
+     * through the parent links until the top. Do not use any class or external methods.
+     */
+    public int sameHeightSetsDifferentRoot() { return 0; }
 }

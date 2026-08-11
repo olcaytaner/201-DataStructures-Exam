@@ -246,4 +246,12 @@ public class Graph extends AbstractGraph {
      * and same set of vertices. Do not use any class or external methods.
      */
     public Graph(Graph A, Graph B)  {}
+
+    /**
+     * A graph is 2-colorable if each vertex can be given one of 2 colors, and no edge connects
+     * identically colored vertices. Write linear-time method to test a graph for 2-colorability of
+     * an undirected graph by using breadth first search where graph is stored in adjacency list format.
+     * You may assume graph is connected. You may use up to 2 arrays as extra data structure.
+     */
+    public boolean isTwoColorable() { return true; }
 }

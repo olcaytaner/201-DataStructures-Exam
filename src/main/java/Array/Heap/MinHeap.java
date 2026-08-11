@@ -74,4 +74,10 @@ public class MinHeap extends Heap{
      */
     public double averagePercolateUp(int[] list) { return 0; }
 
+    /**
+     * Write the method in MinHeap class that returns the number of node pairs in the heap whose
+     * parents of parents (grandparent) are equal. You may assume root node's parent is itself.
+     * Your method should run at most in quadratic time.
+     */
+    public int howManyPairGrandParentEqual() { return 0; }
 }

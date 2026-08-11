@@ -190,4 +190,11 @@ public class Graph extends AbstractGraph {
      * representation. You are not allowed to use extra data structures.
      */
     public int countTriangles() { return 0; }
+
+    /**
+     * Given adjacency matrix representation of a directed graph, write the method that returns
+     * the number of even-valued edges, where an edge is even-valued if its either of distinct
+     * node values are even. You are not allowed to use extra data structures.
+     */
+    public int evenEdgeGraph() { return 0; }
 }

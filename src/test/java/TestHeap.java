@@ -253,4 +253,29 @@ public class TestHeap {
         Assert.assertEquals(61, heap.sumChangeRange());
     }
 
+    @Test
+    public void testSmallest() {
+        MaxDHeap heap = new MaxDHeap(10,3);
+        heap.insertArray(new int[]{1, 3, 5, 7, 8, 10, 12});
+        Assert.assertEquals(1, heap.smallest());
+
+        heap = new MaxDHeap(10,4);
+        heap.insertArray(new int[]{9, 32, 5, 7, 8, 10, 12});
+        Assert.assertEquals(5, heap.smallest());
+    }
+
+    @Test
+    public void testHowManyPairGrandParentEqual() {
+        MinHeap heap = new MinHeap(10);
+        heap.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        Assert.assertEquals(21, heap.howManyPairGrandParentEqual());
+
+        heap = new MinHeap(10);
+        heap.insertArray(new int[]{1, 3, 5, 7, 8, 10, 12, 8});
+        Assert.assertEquals(21, heap.howManyPairGrandParentEqual());
+
+        heap = new MinHeap(10);
+        heap.insertArray(new int[]{10, 20});
+        Assert.assertEquals(1, heap.howManyPairGrandParentEqual());
+    }
 }
