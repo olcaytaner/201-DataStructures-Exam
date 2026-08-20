@@ -82,4 +82,13 @@ public class QuickSort implements Sort{
      */
     public int[] minMaxRepeat(int[] A) {return new int[0];}
 
+    /**
+     * Suppose you are given an array of N integers. Write a single pass algorithm that puts the
+     * numbers fully divisible by 4 first, then the numbers which division remains 1, then the
+     * numbers which division remains 2, and lastly the numbers which division remains 3
+     * similar to the partition algorithm in QuickSort. You are not allowed to use extra data
+     * structures.
+     */
+    public void quickQuadruple(int[] A) {
+    }
 }

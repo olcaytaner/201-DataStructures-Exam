@@ -1,5 +1,8 @@
 package Array.Sort;
 
+import List.DoublyLinkedList;
+import List.DoublyNode;
+
 public class BubbleSort implements Sort{
 
     @Override
@@ -27,4 +30,10 @@ public class BubbleSort implements Sort{
     public void sort2(int[] A, int[] B, int[] C){
     }
 
+    /**
+     * Write a function in Bubble Sort class that sorts a doubly linked list using bubble sort.
+     * You are not allowed to use extra data structures. You may assume list has more than 2 items.
+     */
+    public void bubbleSortDouble(DoublyLinkedList A) {
+    }
 }

@@ -525,4 +525,19 @@ public class TestTree {
         tree2.insertArray(new int[]{30, 20});
         assertFalse(Tree.isSubtree(tree1.getRoot(), tree2.getRoot()));
     }
+
+    @Test
+    public void testIsTwoColorableTree() {
+        Tree tree1 = new Tree();
+        tree1.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        assertTrue(tree1.isTwoColorableTree());
+
+        Tree tree2 = new Tree();
+        tree2.insertArray(new int[]{5, 4, 6});
+        assertTrue(tree2.isTwoColorableTree());
+
+        Tree tree3 = new Tree();
+        tree3.insertArray(new int[]{10, 5, 15, 3, 7, 12, 20});
+        assertTrue(tree3.isTwoColorableTree());
+    }
 }

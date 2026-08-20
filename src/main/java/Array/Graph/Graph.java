@@ -197,4 +197,11 @@ public class Graph extends AbstractGraph {
      * node values are even. You are not allowed to use extra data structures.
      */
     public int evenEdgeGraph() { return 0; }
+
+    /**
+     * Write a method to count number of diamond subgraphs in a graph with adjacency matrix
+     * representation, where a diamond graph is an induced subgraph on four
+     * vertices containing exactly five edges. You are not allowed to use extra data structures.
+     */
+    public int countDiamonds() { return 0; }
 }

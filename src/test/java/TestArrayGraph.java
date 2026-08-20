@@ -209,4 +209,20 @@ public class TestArrayGraph {
         graph2.addEdge(3, 0);
         assertEquals(2, graph2.evenEdgeGraph());
     }
+
+    @Test
+    public void testCountDiamonds() {
+        Graph graph = new Graph(3);
+        assertEquals(0, graph.countDiamonds());
+
+        graph = new Graph(5,
+                new int[][]{{0, 1}, {0, 2}, {0, 3}, {1, 0},
+                        {1, 2}, {1, 3}, {2, 0}, {2, 1}, {3, 0}, {3, 1}});
+        assertEquals(1, graph.countDiamonds());
+
+        graph = new Graph(4,
+                new int[][]{{0, 2}, {0, 3}, {1, 2},
+                        {1, 3}, {2, 0}, {2, 1}, {2, 3}, {3, 0}, {3, 1}, {3, 2} });
+        assertEquals(1, graph.countDiamonds());
+    }
 }

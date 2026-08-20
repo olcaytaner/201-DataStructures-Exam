@@ -66,17 +66,17 @@ public class TestSort {
     public void testSortLinkedList(){
         BucketSort bucket = new BucketSort(100);
         LinkedList list = new LinkedList();
-        list.insertArray(new int[]{4, 6, 5, 7, 1, 2, 3});
+        list.insertArray(new int[]{2, 3, 1, 2, 1, 2, 3});
         bucket.sortLinkedList(list);
         LinkedList expected = new LinkedList();
-        expected.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        expected.insertArray(new int[]{1, 1, 2, 2, 2, 3, 3});
         assertEquals(expected.toString(), list.toString());
 
         LinkedList list2 = new LinkedList();
-        list2.insertArray(new int[]{1, 2, 3, 4, 6, 7, 8});
+        list2.insertArray(new int[]{1, 2, 3, 1, 1, 3, 2});
         bucket.sortLinkedList(list2);
         LinkedList expected2 = new LinkedList();
-        expected2.insertArray(new int[]{1, 2, 3, 4, 6, 7, 8});
+        expected2.insertArray(new int[]{1, 1, 1, 2, 2, 3, 3});
         assertEquals(expected2.toString(), list2.toString());
     }
 
@@ -385,5 +385,38 @@ public class TestSort {
 
         int[] C = {5, 6, -1, 2, -3, 4, 7};
         assertEquals(5, insert.maxAlternatingLength(C));
+    }
+
+    @Test
+    public void testQuickQuadruple() {
+        QuickSort quick = new QuickSort();
+
+        int[] A = {1, 7, 15, 30, 12};
+        int[] expected = {12, 1, 30, 15, 7};
+        quick.quickQuadruple(A);
+        assertArrayEquals(expected, A);
+
+        int[] A2 = {1, 5, 15, 30, 12};
+        int[] expected2 = {12, 5, 1, 30, 15};
+        quick.quickQuadruple(A2);
+        assertArrayEquals(expected2, A2);
+    }
+
+    @Test
+    public void testBubbleSortDouble(){
+        DoublyLinkedList list = new DoublyLinkedList();
+        list.insertArray(new int[]{4, 6, 5, 7, 1, 2, 3});
+        BubbleSort bubble = new BubbleSort();
+        bubble.bubbleSortDouble(list);
+        DoublyLinkedList expected = new DoublyLinkedList();
+        expected.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        assertEquals(expected.toString(), list.toString());
+
+        list = new DoublyLinkedList();
+        list.insertArray(new int[]{7, 6, 5, 4, 3, 2, 1});
+        bubble.bubbleSortDouble(list);
+        expected = new DoublyLinkedList();
+        expected.insertArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        assertEquals(expected.toString(), list.toString());
     }
 }

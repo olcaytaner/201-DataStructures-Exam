@@ -172,4 +172,12 @@ public class Tree {
      * determining whether two trees are identical.
      */
     public static boolean isSubtree(TreeNode T1, TreeNode T2) { return true; }
+
+    /**
+     * A binary search tree is 2-colorable if each vertex can be given one of 2 colors, and no edge
+     * connects identically colored vertices. Write linear-time method in Tree class to test a tree for
+     * 2-colorability of tree by using breadth first search. You may assume tree is connected,
+     * not empty and has less than 100 nodes. You may only use up to 2 arrays as extra data structure.
+     */
+    public boolean isTwoColorableTree() { return true; }
 }
