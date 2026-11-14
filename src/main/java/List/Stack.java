@@ -155,4 +155,18 @@ public class Stack {
      * and input stack is not empty. You may use up to one external stack.
      */
     public boolean subStackReverse(Stack sub) {return true;}
+
+    /**
+     * Reverses the order of the top k elements of the stack.
+     * The remaining bottom (size - k) elements are unchanged.
+     * You may use any data structure, including linked lists and additional stacks.
+     * Assume 1 <= k <= size of the stack.
+     *
+     * Example: stack = [1, 2, 3, 4, 5] (top = 5), k = 3
+     *          => [1, 2, 5, 4, 3]       (top = 3)
+     * Example: stack = [1, 2, 3, 4, 5] (top = 5), k = 5
+     *          => [5, 4, 3, 2, 1]       (top = 1)
+     */
+    public void reverseFirstK(int k) {
+    }
 }

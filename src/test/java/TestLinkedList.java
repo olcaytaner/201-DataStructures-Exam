@@ -708,4 +708,60 @@ public class TestLinkedList {
         result = DoublyLinkedList.intersection(l1,l2);
         assertEquals("2 3", result.toString());
     }
+
+    @Test
+    public void testSumEven() {
+        list = new LinkedList();
+        list.insertArray(new int[]{1, 2, 3, 4, 5});
+        assertEquals(6, list.sumEven());
+        list = new LinkedList();
+        list.insertArray(new int[]{2, 4, 6, 8});
+        assertEquals(20, list.sumEven());
+        list = new LinkedList();
+        list.insertArray(new int[]{1, 3, 5, 7});
+        assertEquals(0, list.sumEven());
+        list = new LinkedList();
+        list.insertArray(new int[]{10, 3, 8, 7, 6});
+        assertEquals(24, list.sumEven());
+    }
+
+    @Test
+    public void testDeleteSmaller() {
+        list = new LinkedList();
+        list.insertArray(new int[]{3, 1, 4, 1, 5, 2});
+        list.deleteSmaller(3);
+        assertEquals("3 4 5", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{1, 2, 3, 4, 5});
+        list.deleteSmaller(1);
+        assertEquals("1 2 3 4 5", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{1, 2, 3, 4, 5});
+        list.deleteSmaller(6);
+        assertEquals("", list.toString());
+        list = new LinkedList();
+        list.insertArray(new int[]{5, 3, 8, 1, 7, 2});
+        list.deleteSmaller(5);
+        assertEquals("5 8 7", list.toString());
+    }
+
+    @Test
+    public void testMoveLastToFront() {
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{1, 2, 3, 4, 5});
+        doublyList.moveLastToFront();
+        assertEquals("5 1 2 3 4", doublyList.toString());
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{1, 2});
+        doublyList.moveLastToFront();
+        assertEquals("2 1", doublyList.toString());
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{1});
+        doublyList.moveLastToFront();
+        assertEquals("1", doublyList.toString());
+        doublyList = new DoublyLinkedList();
+        doublyList.insertArray(new int[]{3, 6, 9, 12, 15, 18});
+        doublyList.moveLastToFront();
+        assertEquals("18 3 6 9 12 15", doublyList.toString());
+    }
 }

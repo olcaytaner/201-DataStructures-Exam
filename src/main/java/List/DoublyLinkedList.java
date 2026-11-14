@@ -144,4 +144,18 @@ public class DoublyLinkedList extends LinkedList{
     public static DoublyLinkedList intersection(DoublyLinkedList l1, DoublyLinkedList l2) {
         return new DoublyLinkedList();
     }
+
+    /**
+     * Moves the last node of the list to the front,
+     * making it the new head. All prev and next pointers
+     * must be correctly updated. If the list has 0 or 1
+     * nodes the method does nothing.
+     *
+     * Example: list = 1 <-> 2 <-> 3 <-> 4 <-> 5
+     *          => 5 <-> 1 <-> 2 <-> 3 <-> 4
+     * Example: list = 1 <-> 2
+     *          => 2 <-> 1
+     */
+    public void moveLastToFront() {
+    }
 }

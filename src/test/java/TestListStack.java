@@ -179,4 +179,24 @@ public class TestListStack {
         sub.insertArray(new int[]{2, 4});
         assertFalse(stack.subStackReverse(sub));
     }
+
+    @Test
+    public void testReverseFirstK() {
+        stack = new Stack();
+        stack.insertArray(new int[]{1, 2, 3, 4, 5});
+        stack.reverseFirstK(3);
+        assertEquals("1 2 5 4 3", stack.toString());
+        stack = new Stack();
+        stack.insertArray(new int[]{1, 2, 3, 4, 5});
+        stack.reverseFirstK(1);
+        assertEquals("1 2 3 4 5", stack.toString());
+        stack = new Stack();
+        stack.insertArray(new int[]{1, 2, 3, 4, 5});
+        stack.reverseFirstK(5);
+        assertEquals("5 4 3 2 1", stack.toString());
+        stack = new Stack();
+        stack.insertArray(new int[]{1, 2, 3, 4, 5, 6});
+        stack.reverseFirstK(4);
+        assertEquals("1 2 6 5 4 3", stack.toString());
+    }
 }

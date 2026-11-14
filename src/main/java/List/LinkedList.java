@@ -342,4 +342,26 @@ public class LinkedList {
      * 10 7 9 6 -> False
      */
     public boolean isZigZagSingleLinked() { return true; }
+
+    /**
+     * Returns the sum of all nodes whose data value is even.
+     * Returns 0 if the list is empty or contains no even values.
+     *
+     * Example: list = 1 -> 2 -> 3 -> 4 -> 5  =>  returns 6
+     * Example: list = 1 -> 3 -> 5            =>  returns 0
+     */
+    public int sumEven() { return 0; }
+
+    /**
+     * Removes every node whose data is less than the given value.
+     * If no node qualifies, the list remains unchanged.
+     * The relative order of remaining nodes must be preserved.
+     *
+     * Example: list = 3 -> 1 -> 4 -> 1 -> 5 -> 2,  value = 3
+     *          => 3 -> 4 -> 5
+     * Example: list = 1 -> 2 -> 3,  value = 1
+     *          => 1 -> 2 -> 3  (unchanged)
+     */
+    public void deleteSmaller(int value) {
+    }
 }
